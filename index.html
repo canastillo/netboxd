@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/letterboxd-mac-icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/7e8924c825.js" crossorigin="anonymous"></script>
+    
+    <title>Letterboxd</title>
+</head>
+<body>
+    <header id="top">
+        <img id="logo" src="./img/letterboxd-logo-h-neg-rgb-1000px.png" alt="">
+        <nav id="nav">
+            <ul id="nav-items">
+                <li id="inicio">Inicio</li>
+                <li id="peliculas">Películas</li>
+                <li id="mis-listas">Mis Listas</li>
+                <li id="usuario"><img src="./img/o-3RXixA_400x400.jpg" alt="">averalcine</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="cover">
+            <div id="cont-cover">
+                <h2>Novedades de la semana</h2>
+                <p>
+                    ¿No tienes nada que ver? ¡Esta semana llega llena de estrenos! Revisa 
+                    las nuevas películas agregadas, reseñas y valoraciones de los usuarios. 
+                    No olvides actualizar tu Watchlist y compartir tus listas.
+                </p>
+                <button role="button"><i class="fas fa-book-open"></i>Ver más</button>
+                <button role="button"><i class="fas fa-bookmark"></i>Guardar</button>
+            </div>
+        </div>
+        
+        <div id="contenedor">
+            <h1>Mis Listas</h1>
+            <div class="lista">
+                <h2>Últimas películas vistas</h2>
+                <div class="cont-peliculas">
+                    <button role="button" class="btn-prev" id="btn-prev1"><i class="fas fa-angle-left"></i></button>
+                    
+                    <div class="cont-carousel">
+                        <section class="carousel horizontal">
+                            <article class="pelicula">
+                                <a href="#"><img src="./img/overlord.jpg" alt=""></a>
+                            </article>
+                            <article class="pelicula">
+                                <a href="#"><img src="./img/cloverfield-paradox.jpg" alt=""></a>
+                            </article>
+                            <article class="pelicula">
+                                <a href="#"><img src="./img/creep-2.jpg" alt=""></a>
+                            </article>
+                            <article class="pelicula">
+                                <a href="#"><img src="./img/Creep.png" alt=""></a>
+                            </article>
+                            <article class="pelicula">
+                                <a href="#"><img src="./img/im-thinking-of-ending-things-poster-jessie-buckley-social.jpeg" alt=""></a>
+                            </article>
+                            <article class="pelicula">
+                                <a href="#"><img src="./img/parasite-cut.jpg" alt=""></a>
+                            </article>
+                            <article class="pelicula">
+                                <a href="#"><img src="./img/el-conjuro.jpg" alt=""></a>
+                            </article>
+                            <article class="pelicula">
+                                <a href="#"><img src="./img/v-de-vendetta.jpg" alt=""></a>
+                            </article>
+                            <article class="pelicula">
+                                <a href="#"><img src="./img/mr-nobody.jpg" alt=""></a>
+                            </article>
+                            <article class="pelicula">
+                                <a href="#"><img src="./img/inception.jpg" alt=""></a>
+                            </article>
+                        </section>
+                    </div>
+                    
+                    <button role="button" class="btn-next "id="btn-next1"><i class="fas fa-angle-right"></i></button>
+                </div>
+                <div class="indicadores"></div>
+            </div>
+            
+            <div class="lista">
+                <h2>El fin se acerca</h2>
+                <div class="cont-peliculas">
+                    <button role="button" class="btn-prev"><i class="fas fa-angle-left"></i></button>
+                    
+                    <div class="cont-carousel">
+                        <section class="carousel vertical">
+                            <article class="pelicula">
+                                <a href="#"><img src="./img/El_d_a_que_la_tierra_se_detuvo.jpg" alt=""></a>
+                            </article>
+                            <article class="pelicula">
+                                <a href="#"><img src="./img/eldiadespuesdemañana.jpg" alt=""></a>
+                            </article>
+                            <article class="pelicula">
+                                <a href="#"><img src="./img/presagio.jpg" alt=""></a>
+                            </article>
+                            <article class="pelicula">
+                                <a href="#"><img src="./img/2012.jpg" alt=""></a>
+                            </article>
+                            <article class="pelicula">
+                                <a href="#"><img src="./img/Poseidon.webp" alt=""></a>
+                            </article>
+                            <article class="pelicula">
+                                <a href="#"><img src="./img/volcano-cut.jpg" alt=""></a>
+                            </article>
+                            <article class="pelicula">
+                                <a href="#"><img src="./img/Contagio.jpg" alt=""></a>
+                            </article>
+                            <article class="pelicula">
+                                <a href="#"><img src="./img/worlds-war.jpg" alt=""></a>
+                            </article>
+                            <article class="pelicula">
+                                <a href="#"><img src="./img/the-flu.jpg" alt=""></a>
+                            </article>
+                            <article class="pelicula">
+                                <a href="#"><img src="./img/deep_impact.jpg" alt=""></a>
+                            </article>
+                            <article class="pelicula">
+                                <a href="#"><img src="./img/world-war-z-edit.jpg" alt=""></a>
+                            </article>
+                        </section>
+                    </div>
+                    
+                    <button role="button" class="btn-next" ><i class="fas fa-angle-right"></i></button>
+                </div>
+                <div class="indicadores"></div>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
