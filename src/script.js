@@ -1,6 +1,7 @@
 import makeIndicators from './indicators';
 import {movePrev, moveNext} from './buttons';
 import addZoomEffect from './movies';
+import './style.css'
 
 var buttonsPrev = document.querySelectorAll('.btn-prev');
 var buttonsNext = document.querySelectorAll('.btn-next');
