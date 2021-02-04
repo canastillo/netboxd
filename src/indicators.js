@@ -47,4 +47,4 @@ function makeIndicators(lists){
     })
 }
 
-module.exports={makeIndicators}
+export default makeIndicators

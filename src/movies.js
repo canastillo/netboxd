@@ -11,4 +11,4 @@ function addZoomEffect(movies){
     })
 }
 
-module.exports={addZoomEffect}
+export default addZoomEffect

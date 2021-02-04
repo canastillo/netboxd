@@ -33,4 +33,4 @@ function movePrev(btn){
     }
 }
 
-module.exports={moveNext, movePrev}
+export default {moveNext, movePrev}
