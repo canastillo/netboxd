@@ -1,5 +1,5 @@
 function makeIndicators(lists){
-    lists.forEach(list =>{
+    lists.forEach( list=>{
         let row = list.children[1].children[1];         // .cont-carousel
         let movies = row.children[0].children           // películas en esa lista
         let contPages = list.children[2];               // .indicadores
@@ -29,21 +29,7 @@ function makeIndicators(lists){
             movies.forEach(movie => movie.classList.remove('hover'));
         })
         
-        // Esconder botones
-        list.addEventListener('mouseleave', () => {
-            row.parentNode.children[0].style.display = "none";
-            row.parentNode.children[2].style.display = "none";
-        })
-        
-        // Mostrar botones
-        list.addEventListener('mouseenter', ()=> {
-            console.log(row.children[0].style.display);
-            
-            if (window.getComputedStyle(row.children[0], null).display === "flex"){
-                row.parentNode.children[0].style.display = "block";
-                row.parentNode.children[2].style.display = "block";
-            }
-        })
+
     })
 }
 

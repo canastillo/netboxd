@@ -12,7 +12,7 @@ function identifyActive(btn){
 }
 
 function moveNext(btn){
-    fila = btn.parentNode.children[1];      // cont-carousel
+    var fila = btn.parentNode.children[1];      // cont-carousel
     fila.scrollLeft += fila.offsetWidth;    // posición + ancho
     let activo = identifyActive(btn);
 
@@ -23,7 +23,7 @@ function moveNext(btn){
 }
 
 function movePrev(btn){
-    fila = btn.parentNode.children[1];      // cont-carousel
+    var fila = btn.parentNode.children[1];      // cont-carousel
     fila.scrollLeft -= fila.offsetWidth;    // posición - ancho
     let activo = identifyActive(btn);
 
@@ -33,4 +33,24 @@ function movePrev(btn){
     }
 }
 
-export default {moveNext, movePrev}
+function showAndHideButtons(lists){
+    lists.forEach(list =>{
+        let row = list.children[1].children[1];         // .cont-carousel
+
+        // Esconder botones
+        list.addEventListener('mouseleave', () => {
+            row.parentNode.children[0].style.display = "none";
+            row.parentNode.children[2].style.display = "none";
+        })
+        
+        // Mostrar botones
+        list.addEventListener('mouseenter', ()=> {            
+            if (window.getComputedStyle(row.children[0], null).display === "flex"){
+                row.parentNode.children[0].style.display = "block";
+                row.parentNode.children[2].style.display = "block";
+            }
+        })
+    })
+}
+
+module.exports = {moveNext, movePrev, showAndHideButtons}

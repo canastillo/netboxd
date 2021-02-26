@@ -4,7 +4,7 @@ function addZoomEffect(movies){
             const element = e.currentTarget;
             
             setTimeout(() => {
-                allMovies.forEach(pelicula => pelicula.classList.remove('hover'));
+                movies.forEach(pelicula => pelicula.classList.remove('hover'));
                 element.classList.add('hover');
             }, 200)
         })
