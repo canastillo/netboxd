@@ -16,12 +16,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _img_los_coristas_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img/los-coristas.jpg */ "./src/img/los-coristas.jpg");
 // Imports
 
 
+
+
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(_img_los_coristas_jpg__WEBPACK_IMPORTED_MODULE_3__.default);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "*{\r\n    margin: 0;\r\n    padding: 0;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n}\r\n\r\n/* Header */\r\n#top{\r\n    display: flex;\r\n    justify-content: space-between;\r\n    background-color: #202830;\r\n\r\n}\r\n#logo{\r\n    width: 30%;\r\n}\r\n#nav{\r\n    width: 30%;\r\n    margin-top: auto;\r\n    margin-bottom: auto;\r\n}\r\n#nav-items{\r\n    width: 100%;\r\n    color: #aaa;\r\n    font-size: 17px;\r\n    list-style: none;\r\n    display: flex;\r\n    justify-content: space-around;\r\n    align-items: center;\r\n    cursor: pointer;\r\n}\r\n#nav-items li:hover{\r\n    color: white;\r\n}\r\n#mis-listas{\r\n    color: white;\r\n    font-weight: bold;\r\n}\r\n#usuario{\r\n    width: min-content;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    padding-right: 5px;\r\n}\r\n#usuario img{\r\n    width: 30px;\r\n    border-radius: 1em;\r\n    margin-right: 5px;\r\n}\r\n\r\n/* Body */\r\nbody {\r\n    background-color: #202830;\r\n}\r\n#contenedor{\r\n    width: 95%;\r\n    margin: auto;\r\n}\r\nh1{\r\n    color: white;\r\n    font-size: 35px;\r\n    margin-top: 20px;\r\n}\r\n\r\n/* Portada */\r\n#cover{\r\n    font-size: 16px;\r\n    min-height: 40.62em;\r\n    color: white;\r\n    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2),rgba(30, 40, 48, 1)); /*,url('./img/los-coristas.jpg');*/\r\n    background-size: cover;\r\n    display: flex;\r\n    align-items: flex-end;\r\n}\r\n#cont-cover{\r\n    margin-bottom: 5em;\r\n    margin-left: 4em;\r\n}\r\n#cont-cover h2{\r\n    font-size: 3em;\r\n    margin-bottom: 20px;\r\n}\r\n#cont-cover p{\r\n    font-size: 1.5em;\r\n    width: 60%;\r\n    margin-bottom: 20px;\r\n}\r\n#cont-cover button{\r\n    font-size: 1.2em;\r\n    padding: .8em 2.5em;\r\n    border-style: none;\r\n    border-radius: .5em;\r\n    background-color: rgba(0, 0, 0, .5);\r\n    cursor: pointer;\r\n    color: white;\r\n    margin-right: 1em;\r\n}\r\n#cont-cover button i{\r\n    margin-right: .3em;\r\n}\r\n#cont-cover button:hover{\r\n    background-color: white;\r\n    color: black;\r\n}\r\n\r\n/* Listas */\r\n.lista{\r\n    margin-bottom: 70px;\r\n    margin-top: 40px;\r\n}\r\n.lista h2{\r\n    color: white;\r\n    font-size: 25px;\r\n}\r\n.cont-peliculas{\r\n    display: flex;\r\n    align-items: center;\r\n    position: relative;\r\n}\r\n.btn-prev,\r\n.btn-next{\r\n    position: absolute;\r\n    border: none;\r\n    background: rgba(0, 0, 0, 0.3);\r\n    font-size: 40px;\r\n    height: 70px;\r\n    line-height: 40px;\r\n    width: 40px;\r\n    color: white;\r\n    cursor: pointer;\r\n    z-index: 500;\r\n    transition: .2 ease all;\r\n    display: none;\r\n}\r\n.btn-prev:hover,\r\n.btn-next:hover{\r\n    background-color: rgba(0, 0, 0, 0.9);\r\n}\r\n.btn-prev{\r\n    left: 0;\r\n}\r\n.btn-next{\r\n    right: 0;\r\n}\r\n\r\n/* Carousel */\r\n.cont-carousel{\r\n    width: 93%;\r\n    padding: 20px 0;\r\n    overflow: hidden;\r\n    scroll-behavior: smooth;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n.carousel{\r\n    display: flex;\r\n    flex-wrap: nowrap;\r\n}\r\n.pelicula{\r\n    transition: .3s ease all;\r\n    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);\r\n    width: min-content;\r\n}\r\n.pelicula.hover{\r\n    transform: scale(1.1);\r\n    transform-origin: center;\r\n}\r\n.carousel.horizontal .pelicula img{\r\n    height: 200px;\r\n    vertical-align: middle;\r\n}\r\n.carousel.vertical .pelicula img{\r\n    height: 311px;\r\n    vertical-align: middle;\r\n}\r\n\r\n/* Paginación */\r\n.indicadores{\r\n    width: max-content;\r\n    margin: auto;\r\n}\r\n.indicadores button{\r\n    background-color: rgba(255, 255, 255, .6);\r\n    height: 5px;\r\n    width: 60px;\r\n    cursor: pointer;\r\n    border: none;\r\n    margin-right: 5px;\r\n}\r\n.indicadores button:hover{\r\n    background-color: rgba(255, 0, 0, .3);\r\n}\r\n.indicadores button.activo{\r\n    background-color: red;\r\n}\r\n\r\n@media screen and (max-width: 800px){\r\n    #logo{\r\n        width: 40%;\r\n    }\r\n    #top #nav{\r\n        display: none;\r\n    }\r\n    #cont-cover h2{\r\n        font-size: 2em;\r\n    }\r\n    #cont-cover p{\r\n        font-size: 1.3em;\r\n    }\r\n\r\n    .indicadores{\r\n        display: none;\r\n    }\r\n    .cont-carousel{\r\n        overflow: visible;\r\n    }\r\n    .btn-prev, .btn-next{\r\n        display: none;\r\n    }\r\n    .carousel.horizontal{\r\n        display: grid;\r\n        grid-template-columns: repeat(2, 1fr);\r\n        gap: 20px;\r\n        justify-items: center;\r\n    }\r\n    .carousel.horizontal .pelicula img{\r\n        height: 170px;\r\n    }\r\n    .carousel.vertical{\r\n        display: grid;\r\n        grid-template-columns: repeat(3, 1fr);\r\n        gap: 20px;\r\n        justify-items: center;\r\n    }\r\n\r\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,SAAS;IACT,UAAU;IACV,yCAAyC;AAC7C;;AAEA,WAAW;AACX;IACI,aAAa;IACb,8BAA8B;IAC9B,yBAAyB;;AAE7B;AACA;IACI,UAAU;AACd;AACA;IACI,UAAU;IACV,gBAAgB;IAChB,mBAAmB;AACvB;AACA;IACI,WAAW;IACX,WAAW;IACX,eAAe;IACf,gBAAgB;IAChB,aAAa;IACb,6BAA6B;IAC7B,mBAAmB;IACnB,eAAe;AACnB;AACA;IACI,YAAY;AAChB;AACA;IACI,YAAY;IACZ,iBAAiB;AACrB;AACA;IACI,kBAAkB;IAClB,aAAa;IACb,mBAAmB;IACnB,8BAA8B;IAC9B,kBAAkB;AACtB;AACA;IACI,WAAW;IACX,kBAAkB;IAClB,iBAAiB;AACrB;;AAEA,SAAS;AACT;IACI,yBAAyB;AAC7B;AACA;IACI,UAAU;IACV,YAAY;AAChB;AACA;IACI,YAAY;IACZ,eAAe;IACf,gBAAgB;AACpB;;AAEA,YAAY;AACZ;IACI,eAAe;IACf,mBAAmB;IACnB,YAAY;IACZ,qFAAqF,EAAE,kCAAkC;IACzH,sBAAsB;IACtB,aAAa;IACb,qBAAqB;AACzB;AACA;IACI,kBAAkB;IAClB,gBAAgB;AACpB;AACA;IACI,cAAc;IACd,mBAAmB;AACvB;AACA;IACI,gBAAgB;IAChB,UAAU;IACV,mBAAmB;AACvB;AACA;IACI,gBAAgB;IAChB,mBAAmB;IACnB,kBAAkB;IAClB,mBAAmB;IACnB,mCAAmC;IACnC,eAAe;IACf,YAAY;IACZ,iBAAiB;AACrB;AACA;IACI,kBAAkB;AACtB;AACA;IACI,uBAAuB;IACvB,YAAY;AAChB;;AAEA,WAAW;AACX;IACI,mBAAmB;IACnB,gBAAgB;AACpB;AACA;IACI,YAAY;IACZ,eAAe;AACnB;AACA;IACI,aAAa;IACb,mBAAmB;IACnB,kBAAkB;AACtB;AACA;;IAEI,kBAAkB;IAClB,YAAY;IACZ,8BAA8B;IAC9B,eAAe;IACf,YAAY;IACZ,iBAAiB;IACjB,WAAW;IACX,YAAY;IACZ,eAAe;IACf,YAAY;IACZ,uBAAuB;IACvB,aAAa;AACjB;AACA;;IAEI,oCAAoC;AACxC;AACA;IACI,OAAO;AACX;AACA;IACI,QAAQ;AACZ;;AAEA,aAAa;AACb;IACI,UAAU;IACV,eAAe;IACf,gBAAgB;IAChB,uBAAuB;IACvB,iBAAiB;IACjB,kBAAkB;AACtB;AACA;IACI,aAAa;IACb,iBAAiB;AACrB;AACA;IACI,wBAAwB;IACxB,0CAA0C;IAC1C,kBAAkB;AACtB;AACA;IACI,qBAAqB;IACrB,wBAAwB;AAC5B;AACA;IACI,aAAa;IACb,sBAAsB;AAC1B;AACA;IACI,aAAa;IACb,sBAAsB;AAC1B;;AAEA,eAAe;AACf;IACI,kBAAkB;IAClB,YAAY;AAChB;AACA;IACI,yCAAyC;IACzC,WAAW;IACX,WAAW;IACX,eAAe;IACf,YAAY;IACZ,iBAAiB;AACrB;AACA;IACI,qCAAqC;AACzC;AACA;IACI,qBAAqB;AACzB;;AAEA;IACI;QACI,UAAU;IACd;IACA;QACI,aAAa;IACjB;IACA;QACI,cAAc;IAClB;IACA;QACI,gBAAgB;IACpB;;IAEA;QACI,aAAa;IACjB;IACA;QACI,iBAAiB;IACrB;IACA;QACI,aAAa;IACjB;IACA;QACI,aAAa;QACb,qCAAqC;QACrC,SAAS;QACT,qBAAqB;IACzB;IACA;QACI,aAAa;IACjB;IACA;QACI,aAAa;QACb,qCAAqC;QACrC,SAAS;QACT,qBAAqB;IACzB;;AAEJ","sourcesContent":["*{\r\n    margin: 0;\r\n    padding: 0;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n}\r\n\r\n/* Header */\r\n#top{\r\n    display: flex;\r\n    justify-content: space-between;\r\n    background-color: #202830;\r\n\r\n}\r\n#logo{\r\n    width: 30%;\r\n}\r\n#nav{\r\n    width: 30%;\r\n    margin-top: auto;\r\n    margin-bottom: auto;\r\n}\r\n#nav-items{\r\n    width: 100%;\r\n    color: #aaa;\r\n    font-size: 17px;\r\n    list-style: none;\r\n    display: flex;\r\n    justify-content: space-around;\r\n    align-items: center;\r\n    cursor: pointer;\r\n}\r\n#nav-items li:hover{\r\n    color: white;\r\n}\r\n#mis-listas{\r\n    color: white;\r\n    font-weight: bold;\r\n}\r\n#usuario{\r\n    width: min-content;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    padding-right: 5px;\r\n}\r\n#usuario img{\r\n    width: 30px;\r\n    border-radius: 1em;\r\n    margin-right: 5px;\r\n}\r\n\r\n/* Body */\r\nbody {\r\n    background-color: #202830;\r\n}\r\n#contenedor{\r\n    width: 95%;\r\n    margin: auto;\r\n}\r\nh1{\r\n    color: white;\r\n    font-size: 35px;\r\n    margin-top: 20px;\r\n}\r\n\r\n/* Portada */\r\n#cover{\r\n    font-size: 16px;\r\n    min-height: 40.62em;\r\n    color: white;\r\n    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2),rgba(30, 40, 48, 1)); /*,url('./img/los-coristas.jpg');*/\r\n    background-size: cover;\r\n    display: flex;\r\n    align-items: flex-end;\r\n}\r\n#cont-cover{\r\n    margin-bottom: 5em;\r\n    margin-left: 4em;\r\n}\r\n#cont-cover h2{\r\n    font-size: 3em;\r\n    margin-bottom: 20px;\r\n}\r\n#cont-cover p{\r\n    font-size: 1.5em;\r\n    width: 60%;\r\n    margin-bottom: 20px;\r\n}\r\n#cont-cover button{\r\n    font-size: 1.2em;\r\n    padding: .8em 2.5em;\r\n    border-style: none;\r\n    border-radius: .5em;\r\n    background-color: rgba(0, 0, 0, .5);\r\n    cursor: pointer;\r\n    color: white;\r\n    margin-right: 1em;\r\n}\r\n#cont-cover button i{\r\n    margin-right: .3em;\r\n}\r\n#cont-cover button:hover{\r\n    background-color: white;\r\n    color: black;\r\n}\r\n\r\n/* Listas */\r\n.lista{\r\n    margin-bottom: 70px;\r\n    margin-top: 40px;\r\n}\r\n.lista h2{\r\n    color: white;\r\n    font-size: 25px;\r\n}\r\n.cont-peliculas{\r\n    display: flex;\r\n    align-items: center;\r\n    position: relative;\r\n}\r\n.btn-prev,\r\n.btn-next{\r\n    position: absolute;\r\n    border: none;\r\n    background: rgba(0, 0, 0, 0.3);\r\n    font-size: 40px;\r\n    height: 70px;\r\n    line-height: 40px;\r\n    width: 40px;\r\n    color: white;\r\n    cursor: pointer;\r\n    z-index: 500;\r\n    transition: .2 ease all;\r\n    display: none;\r\n}\r\n.btn-prev:hover,\r\n.btn-next:hover{\r\n    background-color: rgba(0, 0, 0, 0.9);\r\n}\r\n.btn-prev{\r\n    left: 0;\r\n}\r\n.btn-next{\r\n    right: 0;\r\n}\r\n\r\n/* Carousel */\r\n.cont-carousel{\r\n    width: 93%;\r\n    padding: 20px 0;\r\n    overflow: hidden;\r\n    scroll-behavior: smooth;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n.carousel{\r\n    display: flex;\r\n    flex-wrap: nowrap;\r\n}\r\n.pelicula{\r\n    transition: .3s ease all;\r\n    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);\r\n    width: min-content;\r\n}\r\n.pelicula.hover{\r\n    transform: scale(1.1);\r\n    transform-origin: center;\r\n}\r\n.carousel.horizontal .pelicula img{\r\n    height: 200px;\r\n    vertical-align: middle;\r\n}\r\n.carousel.vertical .pelicula img{\r\n    height: 311px;\r\n    vertical-align: middle;\r\n}\r\n\r\n/* Paginación */\r\n.indicadores{\r\n    width: max-content;\r\n    margin: auto;\r\n}\r\n.indicadores button{\r\n    background-color: rgba(255, 255, 255, .6);\r\n    height: 5px;\r\n    width: 60px;\r\n    cursor: pointer;\r\n    border: none;\r\n    margin-right: 5px;\r\n}\r\n.indicadores button:hover{\r\n    background-color: rgba(255, 0, 0, .3);\r\n}\r\n.indicadores button.activo{\r\n    background-color: red;\r\n}\r\n\r\n@media screen and (max-width: 800px){\r\n    #logo{\r\n        width: 40%;\r\n    }\r\n    #top #nav{\r\n        display: none;\r\n    }\r\n    #cont-cover h2{\r\n        font-size: 2em;\r\n    }\r\n    #cont-cover p{\r\n        font-size: 1.3em;\r\n    }\r\n\r\n    .indicadores{\r\n        display: none;\r\n    }\r\n    .cont-carousel{\r\n        overflow: visible;\r\n    }\r\n    .btn-prev, .btn-next{\r\n        display: none;\r\n    }\r\n    .carousel.horizontal{\r\n        display: grid;\r\n        grid-template-columns: repeat(2, 1fr);\r\n        gap: 20px;\r\n        justify-items: center;\r\n    }\r\n    .carousel.horizontal .pelicula img{\r\n        height: 170px;\r\n    }\r\n    .carousel.vertical{\r\n        display: grid;\r\n        grid-template-columns: repeat(3, 1fr);\r\n        gap: 20px;\r\n        justify-items: center;\r\n    }\r\n\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "*{\r\n    margin: 0;\r\n    padding: 0;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n}\r\n\r\n/* Header */\r\n#top{\r\n    display: flex;\r\n    justify-content: space-between;\r\n    background-color: #202830;\r\n\r\n}\r\n#logo{\r\n    width: 30%;\r\n}\r\n#nav{\r\n    width: 30%;\r\n    margin-top: auto;\r\n    margin-bottom: auto;\r\n}\r\n#nav-items{\r\n    width: 100%;\r\n    color: #aaa;\r\n    font-size: 17px;\r\n    list-style: none;\r\n    display: flex;\r\n    justify-content: space-around;\r\n    align-items: center;\r\n    cursor: pointer;\r\n}\r\n#nav-items li:hover{\r\n    color: white;\r\n}\r\n#mis-listas{\r\n    color: white;\r\n    font-weight: bold;\r\n}\r\n#usuario{\r\n    width: min-content;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    padding-right: 5px;\r\n}\r\n#usuario img{\r\n    width: 30px;\r\n    border-radius: 1em;\r\n    margin-right: 5px;\r\n}\r\n\r\n/* Body */\r\nbody {\r\n    background-color: #202830;\r\n}\r\n#contenedor{\r\n    width: 95%;\r\n    margin: auto;\r\n}\r\nh1{\r\n    color: white;\r\n    font-size: 35px;\r\n    margin-top: 20px;\r\n}\r\n\r\n/* Portada */\r\n#cover{\r\n    font-size: 16px;\r\n    min-height: 40.62em;\r\n    color: white;\r\n    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2),rgba(30, 40, 48, 1)), url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n    background-size: cover;\r\n    display: flex;\r\n    align-items: flex-end;\r\n}\r\n#cont-cover{\r\n    margin-bottom: 5em;\r\n    margin-left: 4em;\r\n}\r\n#cont-cover h2{\r\n    font-size: 3em;\r\n    margin-bottom: 20px;\r\n}\r\n#cont-cover p{\r\n    font-size: 1.5em;\r\n    width: 60%;\r\n    margin-bottom: 20px;\r\n}\r\n#cont-cover button{\r\n    font-size: 1.2em;\r\n    padding: .8em 2.5em;\r\n    border-style: none;\r\n    border-radius: .5em;\r\n    background-color: rgba(0, 0, 0, .5);\r\n    cursor: pointer;\r\n    color: white;\r\n    margin-right: 1em;\r\n}\r\n#cont-cover button i{\r\n    margin-right: .3em;\r\n}\r\n#cont-cover button:hover{\r\n    background-color: white;\r\n    color: black;\r\n}\r\n\r\n/* Listas */\r\n.lista{\r\n    margin-bottom: 70px;\r\n    margin-top: 40px;\r\n}\r\n.lista h2{\r\n    color: white;\r\n    font-size: 25px;\r\n}\r\n.cont-peliculas{\r\n    display: flex;\r\n    align-items: center;\r\n    position: relative;\r\n}\r\n.btn-prev,\r\n.btn-next{\r\n    position: absolute;\r\n    border: none;\r\n    background: rgba(0, 0, 0, 0.3);\r\n    font-size: 40px;\r\n    height: 70px;\r\n    line-height: 40px;\r\n    width: 40px;\r\n    color: white;\r\n    cursor: pointer;\r\n    z-index: 500;\r\n    transition: .2 ease all;\r\n    display: none;\r\n}\r\n.btn-prev:hover,\r\n.btn-next:hover{\r\n    background-color: rgba(0, 0, 0, 0.9);\r\n}\r\n.btn-prev{\r\n    left: 0;\r\n}\r\n.btn-next{\r\n    right: 0;\r\n}\r\n\r\n/* Carousel */\r\n.cont-carousel{\r\n    width: 93%;\r\n    padding: 20px 0;\r\n    overflow: hidden;\r\n    scroll-behavior: smooth;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n.carousel{\r\n    display: flex;\r\n    flex-wrap: nowrap;\r\n}\r\n.pelicula{\r\n    transition: .3s ease all;\r\n    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);\r\n    width: min-content;\r\n}\r\n.pelicula.hover{\r\n    transform: scale(1.1);\r\n    transform-origin: center;\r\n}\r\n.carousel.horizontal .pelicula img{\r\n    height: 200px;\r\n    vertical-align: middle;\r\n}\r\n.carousel.vertical .pelicula img{\r\n    height: 311px;\r\n    vertical-align: middle;\r\n}\r\n\r\n/* Paginación */\r\n.indicadores{\r\n    width: max-content;\r\n    margin: auto;\r\n}\r\n.indicadores button{\r\n    background-color: rgba(255, 255, 255, .6);\r\n    height: 5px;\r\n    width: 60px;\r\n    cursor: pointer;\r\n    border: none;\r\n    margin-right: 5px;\r\n}\r\n.indicadores button:hover{\r\n    background-color: rgba(255, 0, 0, .3);\r\n}\r\n.indicadores button.activo{\r\n    background-color: red;\r\n}\r\n\r\n@media screen and (max-width: 800px){\r\n    #logo{\r\n        width: 40%;\r\n    }\r\n    #top #nav{\r\n        display: none;\r\n    }\r\n    #cont-cover h2{\r\n        font-size: 2em;\r\n    }\r\n    #cont-cover p{\r\n        font-size: 1.3em;\r\n    }\r\n\r\n    .indicadores{\r\n        display: none;\r\n    }\r\n    .cont-carousel{\r\n        overflow: visible;\r\n    }\r\n    .btn-prev, .btn-next{\r\n        display: none;\r\n    }\r\n    .carousel.horizontal{\r\n        display: grid;\r\n        grid-template-columns: repeat(2, 1fr);\r\n        gap: 20px;\r\n        justify-items: center;\r\n    }\r\n    .carousel.horizontal .pelicula img{\r\n        height: 170px;\r\n    }\r\n    .carousel.vertical{\r\n        display: grid;\r\n        grid-template-columns: repeat(3, 1fr);\r\n        gap: 20px;\r\n        justify-items: center;\r\n    }\r\n\r\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,SAAS;IACT,UAAU;IACV,yCAAyC;AAC7C;;AAEA,WAAW;AACX;IACI,aAAa;IACb,8BAA8B;IAC9B,yBAAyB;;AAE7B;AACA;IACI,UAAU;AACd;AACA;IACI,UAAU;IACV,gBAAgB;IAChB,mBAAmB;AACvB;AACA;IACI,WAAW;IACX,WAAW;IACX,eAAe;IACf,gBAAgB;IAChB,aAAa;IACb,6BAA6B;IAC7B,mBAAmB;IACnB,eAAe;AACnB;AACA;IACI,YAAY;AAChB;AACA;IACI,YAAY;IACZ,iBAAiB;AACrB;AACA;IACI,kBAAkB;IAClB,aAAa;IACb,mBAAmB;IACnB,8BAA8B;IAC9B,kBAAkB;AACtB;AACA;IACI,WAAW;IACX,kBAAkB;IAClB,iBAAiB;AACrB;;AAEA,SAAS;AACT;IACI,yBAAyB;AAC7B;AACA;IACI,UAAU;IACV,YAAY;AAChB;AACA;IACI,YAAY;IACZ,eAAe;IACf,gBAAgB;AACpB;;AAEA,YAAY;AACZ;IACI,eAAe;IACf,mBAAmB;IACnB,YAAY;IACZ,8HAAoH;IACpH,sBAAsB;IACtB,aAAa;IACb,qBAAqB;AACzB;AACA;IACI,kBAAkB;IAClB,gBAAgB;AACpB;AACA;IACI,cAAc;IACd,mBAAmB;AACvB;AACA;IACI,gBAAgB;IAChB,UAAU;IACV,mBAAmB;AACvB;AACA;IACI,gBAAgB;IAChB,mBAAmB;IACnB,kBAAkB;IAClB,mBAAmB;IACnB,mCAAmC;IACnC,eAAe;IACf,YAAY;IACZ,iBAAiB;AACrB;AACA;IACI,kBAAkB;AACtB;AACA;IACI,uBAAuB;IACvB,YAAY;AAChB;;AAEA,WAAW;AACX;IACI,mBAAmB;IACnB,gBAAgB;AACpB;AACA;IACI,YAAY;IACZ,eAAe;AACnB;AACA;IACI,aAAa;IACb,mBAAmB;IACnB,kBAAkB;AACtB;AACA;;IAEI,kBAAkB;IAClB,YAAY;IACZ,8BAA8B;IAC9B,eAAe;IACf,YAAY;IACZ,iBAAiB;IACjB,WAAW;IACX,YAAY;IACZ,eAAe;IACf,YAAY;IACZ,uBAAuB;IACvB,aAAa;AACjB;AACA;;IAEI,oCAAoC;AACxC;AACA;IACI,OAAO;AACX;AACA;IACI,QAAQ;AACZ;;AAEA,aAAa;AACb;IACI,UAAU;IACV,eAAe;IACf,gBAAgB;IAChB,uBAAuB;IACvB,iBAAiB;IACjB,kBAAkB;AACtB;AACA;IACI,aAAa;IACb,iBAAiB;AACrB;AACA;IACI,wBAAwB;IACxB,0CAA0C;IAC1C,kBAAkB;AACtB;AACA;IACI,qBAAqB;IACrB,wBAAwB;AAC5B;AACA;IACI,aAAa;IACb,sBAAsB;AAC1B;AACA;IACI,aAAa;IACb,sBAAsB;AAC1B;;AAEA,eAAe;AACf;IACI,kBAAkB;IAClB,YAAY;AAChB;AACA;IACI,yCAAyC;IACzC,WAAW;IACX,WAAW;IACX,eAAe;IACf,YAAY;IACZ,iBAAiB;AACrB;AACA;IACI,qCAAqC;AACzC;AACA;IACI,qBAAqB;AACzB;;AAEA;IACI;QACI,UAAU;IACd;IACA;QACI,aAAa;IACjB;IACA;QACI,cAAc;IAClB;IACA;QACI,gBAAgB;IACpB;;IAEA;QACI,aAAa;IACjB;IACA;QACI,iBAAiB;IACrB;IACA;QACI,aAAa;IACjB;IACA;QACI,aAAa;QACb,qCAAqC;QACrC,SAAS;QACT,qBAAqB;IACzB;IACA;QACI,aAAa;IACjB;IACA;QACI,aAAa;QACb,qCAAqC;QACrC,SAAS;QACT,qBAAqB;IACzB;;AAEJ","sourcesContent":["*{\r\n    margin: 0;\r\n    padding: 0;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n}\r\n\r\n/* Header */\r\n#top{\r\n    display: flex;\r\n    justify-content: space-between;\r\n    background-color: #202830;\r\n\r\n}\r\n#logo{\r\n    width: 30%;\r\n}\r\n#nav{\r\n    width: 30%;\r\n    margin-top: auto;\r\n    margin-bottom: auto;\r\n}\r\n#nav-items{\r\n    width: 100%;\r\n    color: #aaa;\r\n    font-size: 17px;\r\n    list-style: none;\r\n    display: flex;\r\n    justify-content: space-around;\r\n    align-items: center;\r\n    cursor: pointer;\r\n}\r\n#nav-items li:hover{\r\n    color: white;\r\n}\r\n#mis-listas{\r\n    color: white;\r\n    font-weight: bold;\r\n}\r\n#usuario{\r\n    width: min-content;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    padding-right: 5px;\r\n}\r\n#usuario img{\r\n    width: 30px;\r\n    border-radius: 1em;\r\n    margin-right: 5px;\r\n}\r\n\r\n/* Body */\r\nbody {\r\n    background-color: #202830;\r\n}\r\n#contenedor{\r\n    width: 95%;\r\n    margin: auto;\r\n}\r\nh1{\r\n    color: white;\r\n    font-size: 35px;\r\n    margin-top: 20px;\r\n}\r\n\r\n/* Portada */\r\n#cover{\r\n    font-size: 16px;\r\n    min-height: 40.62em;\r\n    color: white;\r\n    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2),rgba(30, 40, 48, 1)), url('./img/los-coristas.jpg');\r\n    background-size: cover;\r\n    display: flex;\r\n    align-items: flex-end;\r\n}\r\n#cont-cover{\r\n    margin-bottom: 5em;\r\n    margin-left: 4em;\r\n}\r\n#cont-cover h2{\r\n    font-size: 3em;\r\n    margin-bottom: 20px;\r\n}\r\n#cont-cover p{\r\n    font-size: 1.5em;\r\n    width: 60%;\r\n    margin-bottom: 20px;\r\n}\r\n#cont-cover button{\r\n    font-size: 1.2em;\r\n    padding: .8em 2.5em;\r\n    border-style: none;\r\n    border-radius: .5em;\r\n    background-color: rgba(0, 0, 0, .5);\r\n    cursor: pointer;\r\n    color: white;\r\n    margin-right: 1em;\r\n}\r\n#cont-cover button i{\r\n    margin-right: .3em;\r\n}\r\n#cont-cover button:hover{\r\n    background-color: white;\r\n    color: black;\r\n}\r\n\r\n/* Listas */\r\n.lista{\r\n    margin-bottom: 70px;\r\n    margin-top: 40px;\r\n}\r\n.lista h2{\r\n    color: white;\r\n    font-size: 25px;\r\n}\r\n.cont-peliculas{\r\n    display: flex;\r\n    align-items: center;\r\n    position: relative;\r\n}\r\n.btn-prev,\r\n.btn-next{\r\n    position: absolute;\r\n    border: none;\r\n    background: rgba(0, 0, 0, 0.3);\r\n    font-size: 40px;\r\n    height: 70px;\r\n    line-height: 40px;\r\n    width: 40px;\r\n    color: white;\r\n    cursor: pointer;\r\n    z-index: 500;\r\n    transition: .2 ease all;\r\n    display: none;\r\n}\r\n.btn-prev:hover,\r\n.btn-next:hover{\r\n    background-color: rgba(0, 0, 0, 0.9);\r\n}\r\n.btn-prev{\r\n    left: 0;\r\n}\r\n.btn-next{\r\n    right: 0;\r\n}\r\n\r\n/* Carousel */\r\n.cont-carousel{\r\n    width: 93%;\r\n    padding: 20px 0;\r\n    overflow: hidden;\r\n    scroll-behavior: smooth;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n.carousel{\r\n    display: flex;\r\n    flex-wrap: nowrap;\r\n}\r\n.pelicula{\r\n    transition: .3s ease all;\r\n    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);\r\n    width: min-content;\r\n}\r\n.pelicula.hover{\r\n    transform: scale(1.1);\r\n    transform-origin: center;\r\n}\r\n.carousel.horizontal .pelicula img{\r\n    height: 200px;\r\n    vertical-align: middle;\r\n}\r\n.carousel.vertical .pelicula img{\r\n    height: 311px;\r\n    vertical-align: middle;\r\n}\r\n\r\n/* Paginación */\r\n.indicadores{\r\n    width: max-content;\r\n    margin: auto;\r\n}\r\n.indicadores button{\r\n    background-color: rgba(255, 255, 255, .6);\r\n    height: 5px;\r\n    width: 60px;\r\n    cursor: pointer;\r\n    border: none;\r\n    margin-right: 5px;\r\n}\r\n.indicadores button:hover{\r\n    background-color: rgba(255, 0, 0, .3);\r\n}\r\n.indicadores button.activo{\r\n    background-color: red;\r\n}\r\n\r\n@media screen and (max-width: 800px){\r\n    #logo{\r\n        width: 40%;\r\n    }\r\n    #top #nav{\r\n        display: none;\r\n    }\r\n    #cont-cover h2{\r\n        font-size: 2em;\r\n    }\r\n    #cont-cover p{\r\n        font-size: 1.3em;\r\n    }\r\n\r\n    .indicadores{\r\n        display: none;\r\n    }\r\n    .cont-carousel{\r\n        overflow: visible;\r\n    }\r\n    .btn-prev, .btn-next{\r\n        display: none;\r\n    }\r\n    .carousel.horizontal{\r\n        display: grid;\r\n        grid-template-columns: repeat(2, 1fr);\r\n        gap: 20px;\r\n        justify-items: center;\r\n    }\r\n    .carousel.horizontal .pelicula img{\r\n        height: 170px;\r\n    }\r\n    .carousel.vertical{\r\n        display: grid;\r\n        grid-template-columns: repeat(3, 1fr);\r\n        gap: 20px;\r\n        justify-items: center;\r\n    }\r\n\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -143,6 +149,65 @@ module.exports = function cssWithMappingToString(item) {
 
   return [content].join('\n');
 };
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    // eslint-disable-next-line no-param-reassign
+    options = {};
+  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign
+
+
+  url = url && url.__esModule ? url.default : url;
+
+  if (typeof url !== 'string') {
+    return url;
+  } // If url is already wrapped in quotes, remove them
+
+
+  if (/^['"].*['"]$/.test(url)) {
+    // eslint-disable-next-line no-param-reassign
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    // eslint-disable-next-line no-param-reassign
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, '\\n'), "\"");
+  }
+
+  return url;
+};
+
+/***/ }),
+
+/***/ "./src/img/los-coristas.jpg":
+/*!**********************************!*\
+  !*** ./src/img/los-coristas.jpg ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "img/los-coristas.jpg");
 
 /***/ }),
 
@@ -475,7 +540,7 @@ function identifyActive(btn){
 }
 
 function moveNext(btn){
-    var fila = btn.parentNode.children[1];      // cont-carousel
+    var fila = btn.parentNode.children[1];  // cont-carousel
     fila.scrollLeft += fila.offsetWidth;    // posición + ancho
     let activo = identifyActive(btn);
 
@@ -627,17 +692,16 @@ buttonsNext = [].slice.call(buttonsNext);
 lists = [].slice.call(lists);
 allMovies = [].slice.call(allMovies);
 
+
 // Agrega eventos para mover las listas
 buttonsPrev.forEach( prev =>{
-    // prev.setAttribute('onclick', 'movePrev(this)')
     prev.addEventListener('click', () => (0,_buttons__WEBPACK_IMPORTED_MODULE_1__.movePrev)(prev))
 });
 buttonsNext.forEach( next =>{
-    // next.setAttribute('onclick', 'moveNext(this)')
     next.addEventListener('click', () => (0,_buttons__WEBPACK_IMPORTED_MODULE_1__.moveNext)(next))
 });
 
-(0,_buttons__WEBPACK_IMPORTED_MODULE_1__.showAndHideButtons)(lists);
+(0,_buttons__WEBPACK_IMPORTED_MODULE_1__.showAndHideButtons)(lists);  //Agrega efectos para mostrar y esconder los botones
 (0,_indicators__WEBPACK_IMPORTED_MODULE_0__.default)(lists);      //Agrega indicadores para cada lista
 (0,_movies__WEBPACK_IMPORTED_MODULE_2__.default)(allMovies);   //Agrega efecto zoom a los posters
 
@@ -693,6 +757,18 @@ buttonsNext.forEach( next =>{
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -707,6 +783,26 @@ buttonsNext.forEach( next =>{
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/

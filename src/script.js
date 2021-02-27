@@ -14,16 +14,15 @@ buttonsNext = [].slice.call(buttonsNext);
 lists = [].slice.call(lists);
 allMovies = [].slice.call(allMovies);
 
+
 // Agrega eventos para mover las listas
 buttonsPrev.forEach( prev =>{
-    // prev.setAttribute('onclick', 'movePrev(this)')
     prev.addEventListener('click', () => movePrev(prev))
 });
 buttonsNext.forEach( next =>{
-    // next.setAttribute('onclick', 'moveNext(this)')
     next.addEventListener('click', () => moveNext(next))
 });
 
-showAndHideButtons(lists);
+showAndHideButtons(lists);  //Agrega efectos para mostrar y esconder los botones
 makeIndicators(lists);      //Agrega indicadores para cada lista
 addZoomEffect(allMovies);   //Agrega efecto zoom a los posters

@@ -12,7 +12,7 @@ function identifyActive(btn){
 }
 
 function moveNext(btn){
-    var fila = btn.parentNode.children[1];      // cont-carousel
+    var fila = btn.parentNode.children[1];  // cont-carousel
     fila.scrollLeft += fila.offsetWidth;    // posición + ancho
     let activo = identifyActive(btn);
 

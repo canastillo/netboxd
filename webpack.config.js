@@ -18,6 +18,14 @@ module.exports = {
                     'style-loader',
                     'css-loader'
                 ]
+            },
+            {
+                test: /\.(png|jpg|jpeg)$/,
+                loader: 'file-loader',
+                options: {
+                    outputPath: 'img',
+                    name: '[name].[ext]'
+                }
             }
         ]
     },
