@@ -1,5 +1,5 @@
-import makeIndicators from './indicators';
 import {movePrev, moveNext, showAndHideButtons} from './buttons';
+import makeIndicators from './indicators';
 import addZoomEffect from './movies';
 import './style.css'
 
