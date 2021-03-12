@@ -1,0 +1,99 @@
+.lists-container{
+    width: 95%;
+    margin: auto;
+}
+.main-title{
+    color: white;
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.list{
+    margin-bottom: 70px;
+    margin-top: 40px;
+}
+.list__title{
+    color: white;
+    font-size: 25px;
+}
+.carousel-cont{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-cont__button{
+    position: absolute;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 40px;
+    height: 70px;
+    line-height: 40px;
+    width: 40px;
+    color: white;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2 ease all;
+    display: none;
+}
+.carousel-cont__button:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.carousel-cont__button--prev{
+    left: 0;
+}
+.carousel-cont__button--next{
+    right: 0;
+}
+
+.carousel{
+    width: 93%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin-left: auto;
+    margin-right: auto;
+}
+.movies{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.movie{
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+    width: min-content;
+}
+.movie--hover{
+    transform: scale(1.1);
+    transform-origin: center;
+}
+.movie__img{
+    vertical-align: middle;
+}
+.movie__img--horizontal{
+    height: 200px;
+}
+.movie__img--vertical{
+    height: 311px;
+}
+
+
+/* Paginación */
+.list__indicators{
+    width: max-content;
+    margin: auto;
+}
+.indicator{
+    background-color: rgba(255, 255, 255, .6);
+    height: 5px;
+    width: 60px;
+    cursor: pointer;
+    border: none;
+    margin-right: 5px;
+}
+.indicator:hover{
+    background-color: rgba(255, 0, 0, .3);
+}
+.indicator--active{
+    background-color: red;
+}

@@ -3,29 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main-header.css">
+    <link rel="stylesheet" href="cover.css">
+    <link rel="stylesheet" href="lists.css">
     <link rel="shortcut icon" href="./img/letterboxd-mac-icon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/7e8924c825.js" crossorigin="anonymous"></script>
     
     <title>Netboxd</title>
 </head>
 <body>
-    <!-- <header id="top"> -->
     <header class="main-header">
-        <!-- <img id="logo" src="./img/letterboxd-logo-h-neg-rgb-1000px.png" alt=""> -->
         <img class="logo" src="./img/letterboxd-logo-h-neg-rgb-1000px.png" alt="">
-        <!-- <nav id="nav"> -->
         <nav class="main-nav">
-            <!-- <ul class="nav-items"> -->
             <ul class="main-menu">
-                <!-- <li id="inicio">Inicio</li> -->
                 <li class="main-menu__item"><a href="#">Inicio</a></li>
-                <!-- <li id="peliculas">Películas</li> -->
                 <li class="main-menu__item"><a href="#">Películas</a></li>
-                <!-- <li id="mis-listas">Mis Listas</li> -->
                 <li class="main-menu__item"><a href="#">Mis Listas</a></li>
-                <!-- <li id="usuario"><img src="./img/o-3RXixA_400x400.jpg" alt="">averalcine</li> -->
-                <li class="main-menu__item"><img src="./img/o-3RXixA_400x400.jpg" alt="">averalcine
+                <li class="main-menu__item main-menu__item--user">
+                    <img class="user__img" src="./img/o-3RXixA_400x400.jpg" alt="">averalcine
                     <ul>
                     </ul>
                 </li>
@@ -34,136 +29,118 @@
     </header>
 
     <main>
-        <!-- <div id="cover"> -->
-        <div class="cover">
-            <div class="cover__content">
-                <h2>Novedades de la semana</h2>
-                <p>
+        <div class="cover-container">
+            <div class="cover">
+                <h2 class="cover__title">Novedades de la semana</h2>
+                <p class="cover__text">
                     ¿No tienes nada que ver? ¡Esta semana llega llena de estrenos! Revisa 
                     las nuevas películas agregadas, reseñas y valoraciones de los usuarios. 
                     No olvides actualizar tu Watchlist y compartir tus listas.
                 </p>
-                <button role="button"><i class="fas fa-book-open"></i>Ver más</button>
-                <button role="button"><i class="fas fa-bookmark"></i>Guardar</button>
+                <button class="cover-button" role="button"><i class="button_icon fas fa-book-open"></i>Ver más</button>
+                <button class="cover-button" role="button"><i class="button_icon fas fa-bookmark"></i>Guardar</button>
             </div>
         </div>
         
-        <!-- <div id="contenedor"> -->
         <div class="lists-container">
-            <h1>Mis Listas</h1>
-            <!-- <div class="lista"> -->
+            <h1 class="main-title">Mis Listas</h1>
+            
             <div class="list">
-                <h2>Últimas películas vistas</h2>
-                <!-- <div class="cont-peliculas"> -->
-                <div class="carousel-container">
-                    <!-- <button role="button" class="btn-prev" id="btn-prev1"> -->
-                    <button role="button" class="btn-prev">
+                <h2 class="list__title">Últimas películas vistas</h2>
+                <div class="carousel-cont">
+                    <button role="button" class="carousel-cont__button carousel-cont__button--prev">
                         <i class="fas fa-angle-left"></i>
                     </button>
                     
-                    <!-- <div class="cont-carousel"> -->
                     <div class="carousel">
-                        <!-- <section class="carousel horizontal"> -->
-                        <section class="movies movies--horizontal">
-                            <!-- <article class="pelicula"> -->
-                            <article class="movies__movie">
-                                <a href="#"><img src="./img/overlord.jpg" alt=""></a>
+                        <section class="movies">
+                            <article class="movie">
+                                <a href="#"><img class="movie__img movie__img--horizontal" src="./img/overlord.jpg" alt=""></a>
                             </article>
-                            <!-- <article class="pelicula"> -->
-                            <article class="movies__movie">
-                                <a href="#"><img src="./img/cloverfield-paradox.jpg" alt=""></a>
+                            <article class="movie">
+                                <a href="#"><img class="movie__img movie__img--horizontal" src="./img/cloverfield-paradox.jpg" alt=""></a>
                             </article>
-                            <!-- <article class="pelicula"> -->
-                            <article class="movies__movie">
-                                <a href="#"><img src="./img/creep-2.jpg" alt=""></a>
+                            <article class="movie">
+                                <a href="#"><img class="movie__img movie__img--horizontal" src="./img/creep-2.jpg" alt=""></a>
                             </article>
-                            <!-- <article class="pelicula"> -->
-                            <article class="movies__movie">
-                                <a href="#"><img src="./img/Creep.png" alt=""></a>
+                            <article class="movie">
+                                <a href="#"><img class="movie__img movie__img--horizontal" src="./img/Creep.png" alt=""></a>
                             </article>
-                            <!-- <article class="pelicula"> -->
-                            <article class="movies__movie">
-                                <a href="#"><img src="./img/im-thinking-of-ending-things-poster-jessie-buckley-social.jpeg" alt=""></a>
+                            <article class="movie">
+                                <a href="#"><img class="movie__img movie__img--horizontal" src="./img/im-thinking-of-ending-things-poster-jessie-buckley-social.jpeg" alt=""></a>
                             </article>
-                            <!-- <article class="pelicula"> -->
-                            <article class="movies__movie">
-                                <a href="#"><img src="./img/parasite-cut.jpg" alt=""></a>
+                            <article class="movie">
+                                <a href="#"><img class="movie__img movie__img--horizontal" src="./img/parasite-cut.jpg" alt=""></a>
                             </article>
-                            <!-- <article class="pelicula"> -->
-                            <article class="movies__movie">
-                                <a href="#"><img src="./img/el-conjuro.jpg" alt=""></a>
+                            <article class="movie">
+                                <a href="#"><img class="movie__img movie__img--horizontal" src="./img/el-conjuro.jpg" alt=""></a>
                             </article>
-                            <!-- <article class="pelicula"> -->
-                            <article class="movies__movie">
-                                <a href="#"><img src="./img/v-de-vendetta.jpg" alt=""></a>
+                            <article class="movie">
+                                <a href="#"><img class="movie__img movie__img--horizontal" src="./img/v-de-vendetta.jpg" alt=""></a>
                             </article>
-                            <!-- <article class="pelicula"> -->
-                            <article class="movies__movie">
-                                <a href="#"><img src="./img/mr-nobody.jpg" alt=""></a>
+                            <article class="movie">
+                                <a href="#"><img class="movie__img movie__img--horizontal" src="./img/mr-nobody.jpg" alt=""></a>
                             </article>
-                            <!-- <article class="pelicula"> -->
-                            <article class="movies__movie">
-                                <a href="#"><img src="./img/inception.jpg" alt=""></a>
+                            <article class="movie">
+                                <a href="#"><img class="movie__img movie__img--horizontal" src="./img/inception.jpg" alt=""></a>
                             </article>
                         </section>
                     </div>
                     
-                    <!-- <button role="button" class="btn-next "id="btn-next1"> -->
-                    <button role="button" class="btn-next">
+                    <button role="button" class="carousel-cont__button carousel-cont__button--next">
                         <i class="fas fa-angle-right"></i>
                     </button>
                 </div>
-                <div class="indicadores"></div>
+                <div class="list__indicators"></div>
             </div>
             
-            <!-- <div class="lista"> -->
             <div class="list">
-                <h2>El fin se acerca</h2>
-                <!-- <div class="cont-peliculas"> -->
-                <div class="list__carousel-container">
-                    <button role="button" class="btn-prev">
+                <h2 class="list__title">El fin se acerca</h2>
+                
+                <div class="carousel-cont">
+                    <button role="button" class="carousel-cont__button carousel-cont__button--prev">
                         <i class="fas fa-angle-left"></i>
                     </button>
                     
                     <div class="carousel">
-                        <section class="movies movies--vertical">
-                            <article class="movies__movie">
-                                <a href="#"><img src="./img/El_d_a_que_la_tierra_se_detuvo.jpg" alt=""></a>
+                        <section class="movies">
+                            <article class="movie">
+                                <a href="#"><img class="movie__img movie__img--vertical" src="./img/El_d_a_que_la_tierra_se_detuvo.jpg" alt=""></a>
                             </article>
-                            <article class="movies__movie">
-                                <a href="#"><img src="./img/eldiadespuesdemañana.jpg" alt=""></a>
+                            <article class="movie">
+                                <a href="#"><img class="movie__img movie__img--vertical" src="./img/eldiadespuesdemañana.jpg" alt=""></a>
                             </article>
-                            <article class="movies__movie">
-                                <a href="#"><img src="./img/presagio.jpg" alt=""></a>
+                            <article class="movie">
+                                <a href="#"><img class="movie__img movie__img--vertical" src="./img/presagio.jpg" alt=""></a>
                             </article>
-                            <article class="movies__movie">
-                                <a href="#"><img src="./img/2012.jpg" alt=""></a>
+                            <article class="movie">
+                                <a href="#"><img class="movie__img movie__img--vertical" src="./img/2012.jpg" alt=""></a>
                             </article>
-                            <article class="movies__movie">
-                                <a href="#"><img src="./img/Poseidon.webp" alt=""></a>
+                            <article class="movie">
+                                <a href="#"><img class="movie__img movie__img--vertical" src="./img/Poseidon.webp" alt=""></a>
                             </article>
-                            <article class="movies__movie">
-                                <a href="#"><img src="./img/volcano-cut.jpg" alt=""></a>
+                            <article class="movie">
+                                <a href="#"><img class="movie__img movie__img--vertical" src="./img/volcano-cut.jpg" alt=""></a>
                             </article>
-                            <article class="movies__movie">
-                                <a href="#"><img src="./img/Contagio.jpg" alt=""></a>
+                            <article class="movie">
+                                <a href="#"><img class="movie__img movie__img--vertical" src="./img/Contagio.jpg" alt=""></a>
                             </article>
-                            <article class="movies__movie">
-                                <a href="#"><img src="./img/worlds-war.jpg" alt=""></a>
+                            <article class="movie">
+                                <a href="#"><img class="movie__img movie__img--vertical" src="./img/worlds-war.jpg" alt=""></a>
                             </article>
-                            <article class="movies__movie">
-                                <a href="#"><img src="./img/the-flu.jpg" alt=""></a>
+                            <article class="movie">
+                                <a href="#"><img class="movie__img movie__img--vertical" src="./img/the-flu.jpg" alt=""></a>
                             </article>
-                            <article class="movies__movie">
-                                <a href="#"><img src="./img/deep_impact.jpg" alt=""></a>
+                            <article class="movie">
+                                <a href="#"><img class="movie__img movie__img--vertical" src="./img/deep_impact.jpg" alt=""></a>
                             </article>
-                            <article class="movies__movie">
-                                <a href="#"><img src="./img/world-war-z-edit.jpg" alt=""></a>
+                            <article class="movie">
+                                <a href="#"><img class="movie__img movie__img--vertical" src="./img/world-war-z-edit.jpg" alt=""></a>
                             </article>
                         </section>
                     </div>
                     
-                    <button role="button" class="btn-next">
+                    <button role="button" class="carousel-cont__button carousel-cont__button--next">
                         <i class="fas fa-angle-right"></i>
                     </button>
                 </div>

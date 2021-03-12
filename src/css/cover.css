@@ -1,0 +1,39 @@
+.cover-container{
+    font-size: 16px;
+    min-height: 40.62em;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2),rgba(30, 40, 48, 1)), url('./img/los-coristas.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+.cover{
+    margin-bottom: 5em;
+    margin-left: 4em;
+}
+.cover__title{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.cover__text{
+    font-size: 1.5em;
+    width: 60%;
+    margin-bottom: 20px;
+}
+.cover__button{
+    font-size: 1.2em;
+    padding: .8em 2.5em;
+    border-style: none;
+    border-radius: .5em;
+    background-color: rgba(0, 0, 0, .5);
+    cursor: pointer;
+    color: white;
+    margin-right: 1em;
+}
+.button__icon{
+    margin-right: .3em;
+}
+.button:hover{
+    background-color: white;
+    color: black;
+}
