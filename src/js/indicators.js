@@ -5,7 +5,7 @@ function makeIndicators(lists){
         let contPages = list.children[2];               // .indicadores
         
         movies = [].slice.call(movies);
-        let mpp = (row.children[0].classList.contains('horizontal')) ? 3 : 5;   // movies per page
+        let mpp = (row.children[0].classList.contains('movies--horizontal')) ? 3 : 5;   // movies per page
         let numPages = Math.ceil(movies.length/mpp);                            // cant de páginas
         
         for(let i = 0; i < numPages; i++){

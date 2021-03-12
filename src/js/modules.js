@@ -3,10 +3,10 @@ import makeIndicators from './indicators';
 import addZoomEffect from './movies';
 
 function runApp(){
-    var buttonsPrev = document.querySelectorAll('.btn-prev');
-    var buttonsNext = document.querySelectorAll('.btn-next');
-    var lists = document.querySelectorAll('.lista');
-    var allMovies = document.querySelectorAll('.pelicula');
+    var buttonsPrev = document.querySelectorAll('#carousel-cont__button--prev');
+    var buttonsNext = document.querySelectorAll('#carousel-cont__button--next');
+    var lists = document.querySelectorAll('#list');
+    var allMovies = document.querySelectorAll('#movie');
 
     // Pasa de dom objects -> arreglos
     buttonsPrev = [].slice.call(buttonsPrev);

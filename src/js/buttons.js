@@ -17,8 +17,8 @@ function moveNext(btn){
     let activo = identifyActive(btn);
 
     if (activo.nextSibling) {
-        activo.classList.remove('activo');          // desactivamos indicador
-        activo.nextSibling.classList.add('activo'); // pasamos al sig indicador
+        activo.classList.remove('indicator--active');          // desactivamos indicador
+        activo.nextSibling.classList.add('indicator--active'); // pasamos al sig indicador
     }
 }
 
@@ -28,8 +28,8 @@ function movePrev(btn){
     let activo = identifyActive(btn);
 
     if (activo.previousSibling) {
-        activo.classList.remove('activo');              // desactivamos indicador
-        activo.previousSibling.classList.add('activo'); // pasamos al sig indicador
+        activo.classList.remove('indicator--active');              // desactivamos indicador
+        activo.previousSibling.classList.add('indicator--active'); // pasamos al sig indicador
     }
 }
 

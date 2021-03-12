@@ -22,18 +22,18 @@
 }
 .cover__button{
     font-size: 1.2em;
-    padding: .8em 2.5em;
-    border-style: none;
-    border-radius: .5em;
     background-color: rgba(0, 0, 0, .5);
     cursor: pointer;
     color: white;
+    padding: .8em 2.5em;
+    border-style: none;
+    border-radius: .5em;
     margin-right: 1em;
 }
 .button__icon{
     margin-right: .3em;
 }
-.button:hover{
+.cover__button:hover{
     background-color: white;
     color: black;
 }

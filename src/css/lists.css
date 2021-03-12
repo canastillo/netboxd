@@ -23,18 +23,19 @@
 }
 
 .carousel-cont__button{
-    position: absolute;
-    border: none;
-    background: rgba(0, 0, 0, 0.3);
     font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    color: white;
+    
+    border: none;
+    position: absolute;
     height: 70px;
     line-height: 40px;
     width: 40px;
-    color: white;
-    cursor: pointer;
     z-index: 500;
     transition: .2 ease all;
-    display: none;
+    /* display: none; */
 }
 .carousel-cont__button:hover{
     background-color: rgba(0, 0, 0, 0.9);
