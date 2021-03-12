@@ -1,10 +1,10 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
-/*!*************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
-  \*************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/cover.css":
+/*!*****************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/cover.css ***!
+  \*****************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -12,22 +12,76 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _img_los_coristas_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img/los-coristas.jpg */ "./src/img/los-coristas.jpg");
+/* harmony import */ var _assets_img_los_coristas_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/img/los-coristas.jpg */ "./src/assets/img/los-coristas.jpg");
 // Imports
 
 
 
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
-var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(_img_los_coristas_jpg__WEBPACK_IMPORTED_MODULE_3__.default);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(_assets_img_los_coristas_jpg__WEBPACK_IMPORTED_MODULE_3__.default);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "*{\r\n    margin: 0;\r\n    padding: 0;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n}\r\n\r\n/* Header */\r\n#top{\r\n    display: flex;\r\n    justify-content: space-between;\r\n    background-color: #202830;\r\n\r\n}\r\n#logo{\r\n    width: 30%;\r\n}\r\n#nav{\r\n    width: 30%;\r\n    margin-top: auto;\r\n    margin-bottom: auto;\r\n}\r\n#nav-items{\r\n    width: 100%;\r\n    color: #aaa;\r\n    font-size: 17px;\r\n    list-style: none;\r\n    display: flex;\r\n    justify-content: space-around;\r\n    align-items: center;\r\n    cursor: pointer;\r\n}\r\n#nav-items li:hover{\r\n    color: white;\r\n}\r\n#mis-listas{\r\n    color: white;\r\n    font-weight: bold;\r\n}\r\n#usuario{\r\n    width: min-content;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    padding-right: 5px;\r\n}\r\n#usuario img{\r\n    width: 30px;\r\n    border-radius: 1em;\r\n    margin-right: 5px;\r\n}\r\n\r\n/* Body */\r\nbody {\r\n    background-color: #202830;\r\n}\r\n#contenedor{\r\n    width: 95%;\r\n    margin: auto;\r\n}\r\nh1{\r\n    color: white;\r\n    font-size: 35px;\r\n    margin-top: 20px;\r\n}\r\n\r\n/* Portada */\r\n#cover{\r\n    font-size: 16px;\r\n    min-height: 40.62em;\r\n    color: white;\r\n    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2),rgba(30, 40, 48, 1)), url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n    background-size: cover;\r\n    display: flex;\r\n    align-items: flex-end;\r\n}\r\n#cont-cover{\r\n    margin-bottom: 5em;\r\n    margin-left: 4em;\r\n}\r\n#cont-cover h2{\r\n    font-size: 3em;\r\n    margin-bottom: 20px;\r\n}\r\n#cont-cover p{\r\n    font-size: 1.5em;\r\n    width: 60%;\r\n    margin-bottom: 20px;\r\n}\r\n#cont-cover button{\r\n    font-size: 1.2em;\r\n    padding: .8em 2.5em;\r\n    border-style: none;\r\n    border-radius: .5em;\r\n    background-color: rgba(0, 0, 0, .5);\r\n    cursor: pointer;\r\n    color: white;\r\n    margin-right: 1em;\r\n}\r\n#cont-cover button i{\r\n    margin-right: .3em;\r\n}\r\n#cont-cover button:hover{\r\n    background-color: white;\r\n    color: black;\r\n}\r\n\r\n/* Listas */\r\n.lista{\r\n    margin-bottom: 70px;\r\n    margin-top: 40px;\r\n}\r\n.lista h2{\r\n    color: white;\r\n    font-size: 25px;\r\n}\r\n.cont-peliculas{\r\n    display: flex;\r\n    align-items: center;\r\n    position: relative;\r\n}\r\n.btn-prev,\r\n.btn-next{\r\n    position: absolute;\r\n    border: none;\r\n    background: rgba(0, 0, 0, 0.3);\r\n    font-size: 40px;\r\n    height: 70px;\r\n    line-height: 40px;\r\n    width: 40px;\r\n    color: white;\r\n    cursor: pointer;\r\n    z-index: 500;\r\n    transition: .2 ease all;\r\n    display: none;\r\n}\r\n.btn-prev:hover,\r\n.btn-next:hover{\r\n    background-color: rgba(0, 0, 0, 0.9);\r\n}\r\n.btn-prev{\r\n    left: 0;\r\n}\r\n.btn-next{\r\n    right: 0;\r\n}\r\n\r\n/* Carousel */\r\n.cont-carousel{\r\n    width: 93%;\r\n    padding: 20px 0;\r\n    overflow: hidden;\r\n    scroll-behavior: smooth;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n.carousel{\r\n    display: flex;\r\n    flex-wrap: nowrap;\r\n}\r\n.pelicula{\r\n    transition: .3s ease all;\r\n    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);\r\n    width: min-content;\r\n}\r\n.pelicula.hover{\r\n    transform: scale(1.1);\r\n    transform-origin: center;\r\n}\r\n.carousel.horizontal .pelicula img{\r\n    height: 200px;\r\n    vertical-align: middle;\r\n}\r\n.carousel.vertical .pelicula img{\r\n    height: 311px;\r\n    vertical-align: middle;\r\n}\r\n\r\n/* Paginación */\r\n.indicadores{\r\n    width: max-content;\r\n    margin: auto;\r\n}\r\n.indicadores button{\r\n    background-color: rgba(255, 255, 255, .6);\r\n    height: 5px;\r\n    width: 60px;\r\n    cursor: pointer;\r\n    border: none;\r\n    margin-right: 5px;\r\n}\r\n.indicadores button:hover{\r\n    background-color: rgba(255, 0, 0, .3);\r\n}\r\n.indicadores button.activo{\r\n    background-color: red;\r\n}\r\n\r\n@media screen and (max-width: 800px){\r\n    #logo{\r\n        width: 40%;\r\n    }\r\n    #top #nav{\r\n        display: none;\r\n    }\r\n    #cont-cover h2{\r\n        font-size: 2em;\r\n    }\r\n    #cont-cover p{\r\n        font-size: 1.3em;\r\n    }\r\n\r\n    .indicadores{\r\n        display: none;\r\n    }\r\n    .cont-carousel{\r\n        overflow: visible;\r\n    }\r\n    .btn-prev, .btn-next{\r\n        display: none;\r\n    }\r\n    .carousel.horizontal{\r\n        display: grid;\r\n        grid-template-columns: repeat(2, 1fr);\r\n        gap: 20px;\r\n        justify-items: center;\r\n    }\r\n    .carousel.horizontal .pelicula img{\r\n        height: 170px;\r\n    }\r\n    .carousel.vertical{\r\n        display: grid;\r\n        grid-template-columns: repeat(3, 1fr);\r\n        gap: 20px;\r\n        justify-items: center;\r\n    }\r\n\r\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,SAAS;IACT,UAAU;IACV,yCAAyC;AAC7C;;AAEA,WAAW;AACX;IACI,aAAa;IACb,8BAA8B;IAC9B,yBAAyB;;AAE7B;AACA;IACI,UAAU;AACd;AACA;IACI,UAAU;IACV,gBAAgB;IAChB,mBAAmB;AACvB;AACA;IACI,WAAW;IACX,WAAW;IACX,eAAe;IACf,gBAAgB;IAChB,aAAa;IACb,6BAA6B;IAC7B,mBAAmB;IACnB,eAAe;AACnB;AACA;IACI,YAAY;AAChB;AACA;IACI,YAAY;IACZ,iBAAiB;AACrB;AACA;IACI,kBAAkB;IAClB,aAAa;IACb,mBAAmB;IACnB,8BAA8B;IAC9B,kBAAkB;AACtB;AACA;IACI,WAAW;IACX,kBAAkB;IAClB,iBAAiB;AACrB;;AAEA,SAAS;AACT;IACI,yBAAyB;AAC7B;AACA;IACI,UAAU;IACV,YAAY;AAChB;AACA;IACI,YAAY;IACZ,eAAe;IACf,gBAAgB;AACpB;;AAEA,YAAY;AACZ;IACI,eAAe;IACf,mBAAmB;IACnB,YAAY;IACZ,8HAAoH;IACpH,sBAAsB;IACtB,aAAa;IACb,qBAAqB;AACzB;AACA;IACI,kBAAkB;IAClB,gBAAgB;AACpB;AACA;IACI,cAAc;IACd,mBAAmB;AACvB;AACA;IACI,gBAAgB;IAChB,UAAU;IACV,mBAAmB;AACvB;AACA;IACI,gBAAgB;IAChB,mBAAmB;IACnB,kBAAkB;IAClB,mBAAmB;IACnB,mCAAmC;IACnC,eAAe;IACf,YAAY;IACZ,iBAAiB;AACrB;AACA;IACI,kBAAkB;AACtB;AACA;IACI,uBAAuB;IACvB,YAAY;AAChB;;AAEA,WAAW;AACX;IACI,mBAAmB;IACnB,gBAAgB;AACpB;AACA;IACI,YAAY;IACZ,eAAe;AACnB;AACA;IACI,aAAa;IACb,mBAAmB;IACnB,kBAAkB;AACtB;AACA;;IAEI,kBAAkB;IAClB,YAAY;IACZ,8BAA8B;IAC9B,eAAe;IACf,YAAY;IACZ,iBAAiB;IACjB,WAAW;IACX,YAAY;IACZ,eAAe;IACf,YAAY;IACZ,uBAAuB;IACvB,aAAa;AACjB;AACA;;IAEI,oCAAoC;AACxC;AACA;IACI,OAAO;AACX;AACA;IACI,QAAQ;AACZ;;AAEA,aAAa;AACb;IACI,UAAU;IACV,eAAe;IACf,gBAAgB;IAChB,uBAAuB;IACvB,iBAAiB;IACjB,kBAAkB;AACtB;AACA;IACI,aAAa;IACb,iBAAiB;AACrB;AACA;IACI,wBAAwB;IACxB,0CAA0C;IAC1C,kBAAkB;AACtB;AACA;IACI,qBAAqB;IACrB,wBAAwB;AAC5B;AACA;IACI,aAAa;IACb,sBAAsB;AAC1B;AACA;IACI,aAAa;IACb,sBAAsB;AAC1B;;AAEA,eAAe;AACf;IACI,kBAAkB;IAClB,YAAY;AAChB;AACA;IACI,yCAAyC;IACzC,WAAW;IACX,WAAW;IACX,eAAe;IACf,YAAY;IACZ,iBAAiB;AACrB;AACA;IACI,qCAAqC;AACzC;AACA;IACI,qBAAqB;AACzB;;AAEA;IACI;QACI,UAAU;IACd;IACA;QACI,aAAa;IACjB;IACA;QACI,cAAc;IAClB;IACA;QACI,gBAAgB;IACpB;;IAEA;QACI,aAAa;IACjB;IACA;QACI,iBAAiB;IACrB;IACA;QACI,aAAa;IACjB;IACA;QACI,aAAa;QACb,qCAAqC;QACrC,SAAS;QACT,qBAAqB;IACzB;IACA;QACI,aAAa;IACjB;IACA;QACI,aAAa;QACb,qCAAqC;QACrC,SAAS;QACT,qBAAqB;IACzB;;AAEJ","sourcesContent":["*{\r\n    margin: 0;\r\n    padding: 0;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n}\r\n\r\n/* Header */\r\n#top{\r\n    display: flex;\r\n    justify-content: space-between;\r\n    background-color: #202830;\r\n\r\n}\r\n#logo{\r\n    width: 30%;\r\n}\r\n#nav{\r\n    width: 30%;\r\n    margin-top: auto;\r\n    margin-bottom: auto;\r\n}\r\n#nav-items{\r\n    width: 100%;\r\n    color: #aaa;\r\n    font-size: 17px;\r\n    list-style: none;\r\n    display: flex;\r\n    justify-content: space-around;\r\n    align-items: center;\r\n    cursor: pointer;\r\n}\r\n#nav-items li:hover{\r\n    color: white;\r\n}\r\n#mis-listas{\r\n    color: white;\r\n    font-weight: bold;\r\n}\r\n#usuario{\r\n    width: min-content;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    padding-right: 5px;\r\n}\r\n#usuario img{\r\n    width: 30px;\r\n    border-radius: 1em;\r\n    margin-right: 5px;\r\n}\r\n\r\n/* Body */\r\nbody {\r\n    background-color: #202830;\r\n}\r\n#contenedor{\r\n    width: 95%;\r\n    margin: auto;\r\n}\r\nh1{\r\n    color: white;\r\n    font-size: 35px;\r\n    margin-top: 20px;\r\n}\r\n\r\n/* Portada */\r\n#cover{\r\n    font-size: 16px;\r\n    min-height: 40.62em;\r\n    color: white;\r\n    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2),rgba(30, 40, 48, 1)), url('./img/los-coristas.jpg');\r\n    background-size: cover;\r\n    display: flex;\r\n    align-items: flex-end;\r\n}\r\n#cont-cover{\r\n    margin-bottom: 5em;\r\n    margin-left: 4em;\r\n}\r\n#cont-cover h2{\r\n    font-size: 3em;\r\n    margin-bottom: 20px;\r\n}\r\n#cont-cover p{\r\n    font-size: 1.5em;\r\n    width: 60%;\r\n    margin-bottom: 20px;\r\n}\r\n#cont-cover button{\r\n    font-size: 1.2em;\r\n    padding: .8em 2.5em;\r\n    border-style: none;\r\n    border-radius: .5em;\r\n    background-color: rgba(0, 0, 0, .5);\r\n    cursor: pointer;\r\n    color: white;\r\n    margin-right: 1em;\r\n}\r\n#cont-cover button i{\r\n    margin-right: .3em;\r\n}\r\n#cont-cover button:hover{\r\n    background-color: white;\r\n    color: black;\r\n}\r\n\r\n/* Listas */\r\n.lista{\r\n    margin-bottom: 70px;\r\n    margin-top: 40px;\r\n}\r\n.lista h2{\r\n    color: white;\r\n    font-size: 25px;\r\n}\r\n.cont-peliculas{\r\n    display: flex;\r\n    align-items: center;\r\n    position: relative;\r\n}\r\n.btn-prev,\r\n.btn-next{\r\n    position: absolute;\r\n    border: none;\r\n    background: rgba(0, 0, 0, 0.3);\r\n    font-size: 40px;\r\n    height: 70px;\r\n    line-height: 40px;\r\n    width: 40px;\r\n    color: white;\r\n    cursor: pointer;\r\n    z-index: 500;\r\n    transition: .2 ease all;\r\n    display: none;\r\n}\r\n.btn-prev:hover,\r\n.btn-next:hover{\r\n    background-color: rgba(0, 0, 0, 0.9);\r\n}\r\n.btn-prev{\r\n    left: 0;\r\n}\r\n.btn-next{\r\n    right: 0;\r\n}\r\n\r\n/* Carousel */\r\n.cont-carousel{\r\n    width: 93%;\r\n    padding: 20px 0;\r\n    overflow: hidden;\r\n    scroll-behavior: smooth;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n.carousel{\r\n    display: flex;\r\n    flex-wrap: nowrap;\r\n}\r\n.pelicula{\r\n    transition: .3s ease all;\r\n    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);\r\n    width: min-content;\r\n}\r\n.pelicula.hover{\r\n    transform: scale(1.1);\r\n    transform-origin: center;\r\n}\r\n.carousel.horizontal .pelicula img{\r\n    height: 200px;\r\n    vertical-align: middle;\r\n}\r\n.carousel.vertical .pelicula img{\r\n    height: 311px;\r\n    vertical-align: middle;\r\n}\r\n\r\n/* Paginación */\r\n.indicadores{\r\n    width: max-content;\r\n    margin: auto;\r\n}\r\n.indicadores button{\r\n    background-color: rgba(255, 255, 255, .6);\r\n    height: 5px;\r\n    width: 60px;\r\n    cursor: pointer;\r\n    border: none;\r\n    margin-right: 5px;\r\n}\r\n.indicadores button:hover{\r\n    background-color: rgba(255, 0, 0, .3);\r\n}\r\n.indicadores button.activo{\r\n    background-color: red;\r\n}\r\n\r\n@media screen and (max-width: 800px){\r\n    #logo{\r\n        width: 40%;\r\n    }\r\n    #top #nav{\r\n        display: none;\r\n    }\r\n    #cont-cover h2{\r\n        font-size: 2em;\r\n    }\r\n    #cont-cover p{\r\n        font-size: 1.3em;\r\n    }\r\n\r\n    .indicadores{\r\n        display: none;\r\n    }\r\n    .cont-carousel{\r\n        overflow: visible;\r\n    }\r\n    .btn-prev, .btn-next{\r\n        display: none;\r\n    }\r\n    .carousel.horizontal{\r\n        display: grid;\r\n        grid-template-columns: repeat(2, 1fr);\r\n        gap: 20px;\r\n        justify-items: center;\r\n    }\r\n    .carousel.horizontal .pelicula img{\r\n        height: 170px;\r\n    }\r\n    .carousel.vertical{\r\n        display: grid;\r\n        grid-template-columns: repeat(3, 1fr);\r\n        gap: 20px;\r\n        justify-items: center;\r\n    }\r\n\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".cover-container{\r\n    font-size: 16px;\r\n    min-height: 40.62em;\r\n    color: white;\r\n    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2),rgba(30, 40, 48, 1)), url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n    background-size: cover;\r\n    display: flex;\r\n    align-items: flex-end;\r\n}\r\n.cover{\r\n    margin-bottom: 5em;\r\n    margin-left: 4em;\r\n}\r\n.cover__title{\r\n    font-size: 3em;\r\n    margin-bottom: 20px;\r\n}\r\n.cover__text{\r\n    font-size: 1.5em;\r\n    width: 60%;\r\n    margin-bottom: 20px;\r\n}\r\n.cover__button{\r\n    font-size: 1.2em;\r\n    padding: .8em 2.5em;\r\n    border-style: none;\r\n    border-radius: .5em;\r\n    background-color: rgba(0, 0, 0, .5);\r\n    cursor: pointer;\r\n    color: white;\r\n    margin-right: 1em;\r\n}\r\n.button__icon{\r\n    margin-right: .3em;\r\n}\r\n.button:hover{\r\n    background-color: white;\r\n    color: black;\r\n}", "",{"version":3,"sources":["webpack://./src/css/cover.css"],"names":[],"mappings":"AAAA;IACI,eAAe;IACf,mBAAmB;IACnB,YAAY;IACZ,8HAA4H;IAC5H,sBAAsB;IACtB,aAAa;IACb,qBAAqB;AACzB;AACA;IACI,kBAAkB;IAClB,gBAAgB;AACpB;AACA;IACI,cAAc;IACd,mBAAmB;AACvB;AACA;IACI,gBAAgB;IAChB,UAAU;IACV,mBAAmB;AACvB;AACA;IACI,gBAAgB;IAChB,mBAAmB;IACnB,kBAAkB;IAClB,mBAAmB;IACnB,mCAAmC;IACnC,eAAe;IACf,YAAY;IACZ,iBAAiB;AACrB;AACA;IACI,kBAAkB;AACtB;AACA;IACI,uBAAuB;IACvB,YAAY;AAChB","sourcesContent":[".cover-container{\r\n    font-size: 16px;\r\n    min-height: 40.62em;\r\n    color: white;\r\n    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2),rgba(30, 40, 48, 1)), url('../assets/img/los-coristas.jpg');\r\n    background-size: cover;\r\n    display: flex;\r\n    align-items: flex-end;\r\n}\r\n.cover{\r\n    margin-bottom: 5em;\r\n    margin-left: 4em;\r\n}\r\n.cover__title{\r\n    font-size: 3em;\r\n    margin-bottom: 20px;\r\n}\r\n.cover__text{\r\n    font-size: 1.5em;\r\n    width: 60%;\r\n    margin-bottom: 20px;\r\n}\r\n.cover__button{\r\n    font-size: 1.2em;\r\n    padding: .8em 2.5em;\r\n    border-style: none;\r\n    border-radius: .5em;\r\n    background-color: rgba(0, 0, 0, .5);\r\n    cursor: pointer;\r\n    color: white;\r\n    margin-right: 1em;\r\n}\r\n.button__icon{\r\n    margin-right: .3em;\r\n}\r\n.button:hover{\r\n    background-color: white;\r\n    color: black;\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/lists.css":
+/*!*****************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/lists.css ***!
+  \*****************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".lists-container{\r\n    width: 95%;\r\n    margin: auto;\r\n}\r\n.main-title{\r\n    color: white;\r\n    font-size: 35px;\r\n    margin-top: 20px;\r\n}\r\n\r\n.list{\r\n    margin-bottom: 70px;\r\n    margin-top: 40px;\r\n}\r\n.list__title{\r\n    color: white;\r\n    font-size: 25px;\r\n}\r\n.carousel-cont{\r\n    display: flex;\r\n    align-items: center;\r\n    position: relative;\r\n}\r\n\r\n.carousel-cont__button{\r\n    position: absolute;\r\n    border: none;\r\n    background: rgba(0, 0, 0, 0.3);\r\n    font-size: 40px;\r\n    height: 70px;\r\n    line-height: 40px;\r\n    width: 40px;\r\n    color: white;\r\n    cursor: pointer;\r\n    z-index: 500;\r\n    transition: .2 ease all;\r\n    display: none;\r\n}\r\n.carousel-cont__button:hover{\r\n    background-color: rgba(0, 0, 0, 0.9);\r\n}\r\n.carousel-cont__button--prev{\r\n    left: 0;\r\n}\r\n.carousel-cont__button--next{\r\n    right: 0;\r\n}\r\n\r\n.carousel{\r\n    width: 93%;\r\n    padding: 20px 0;\r\n    overflow: hidden;\r\n    scroll-behavior: smooth;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n.movies{\r\n    display: flex;\r\n    flex-wrap: nowrap;\r\n}\r\n.movie{\r\n    transition: .3s ease all;\r\n    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);\r\n    width: min-content;\r\n}\r\n.movie--hover{\r\n    transform: scale(1.1);\r\n    transform-origin: center;\r\n}\r\n.movie__img{\r\n    vertical-align: middle;\r\n}\r\n.movie__img--horizontal{\r\n    height: 200px;\r\n}\r\n.movie__img--vertical{\r\n    height: 311px;\r\n}\r\n\r\n\r\n/* Paginación */\r\n.list__indicators{\r\n    width: max-content;\r\n    margin: auto;\r\n}\r\n.indicator{\r\n    background-color: rgba(255, 255, 255, .6);\r\n    height: 5px;\r\n    width: 60px;\r\n    cursor: pointer;\r\n    border: none;\r\n    margin-right: 5px;\r\n}\r\n.indicator:hover{\r\n    background-color: rgba(255, 0, 0, .3);\r\n}\r\n.indicator--active{\r\n    background-color: red;\r\n}", "",{"version":3,"sources":["webpack://./src/css/lists.css"],"names":[],"mappings":"AAAA;IACI,UAAU;IACV,YAAY;AAChB;AACA;IACI,YAAY;IACZ,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,mBAAmB;IACnB,gBAAgB;AACpB;AACA;IACI,YAAY;IACZ,eAAe;AACnB;AACA;IACI,aAAa;IACb,mBAAmB;IACnB,kBAAkB;AACtB;;AAEA;IACI,kBAAkB;IAClB,YAAY;IACZ,8BAA8B;IAC9B,eAAe;IACf,YAAY;IACZ,iBAAiB;IACjB,WAAW;IACX,YAAY;IACZ,eAAe;IACf,YAAY;IACZ,uBAAuB;IACvB,aAAa;AACjB;AACA;IACI,oCAAoC;AACxC;AACA;IACI,OAAO;AACX;AACA;IACI,QAAQ;AACZ;;AAEA;IACI,UAAU;IACV,eAAe;IACf,gBAAgB;IAChB,uBAAuB;IACvB,iBAAiB;IACjB,kBAAkB;AACtB;AACA;IACI,aAAa;IACb,iBAAiB;AACrB;AACA;IACI,wBAAwB;IACxB,0CAA0C;IAC1C,kBAAkB;AACtB;AACA;IACI,qBAAqB;IACrB,wBAAwB;AAC5B;AACA;IACI,sBAAsB;AAC1B;AACA;IACI,aAAa;AACjB;AACA;IACI,aAAa;AACjB;;;AAGA,eAAe;AACf;IACI,kBAAkB;IAClB,YAAY;AAChB;AACA;IACI,yCAAyC;IACzC,WAAW;IACX,WAAW;IACX,eAAe;IACf,YAAY;IACZ,iBAAiB;AACrB;AACA;IACI,qCAAqC;AACzC;AACA;IACI,qBAAqB;AACzB","sourcesContent":[".lists-container{\r\n    width: 95%;\r\n    margin: auto;\r\n}\r\n.main-title{\r\n    color: white;\r\n    font-size: 35px;\r\n    margin-top: 20px;\r\n}\r\n\r\n.list{\r\n    margin-bottom: 70px;\r\n    margin-top: 40px;\r\n}\r\n.list__title{\r\n    color: white;\r\n    font-size: 25px;\r\n}\r\n.carousel-cont{\r\n    display: flex;\r\n    align-items: center;\r\n    position: relative;\r\n}\r\n\r\n.carousel-cont__button{\r\n    position: absolute;\r\n    border: none;\r\n    background: rgba(0, 0, 0, 0.3);\r\n    font-size: 40px;\r\n    height: 70px;\r\n    line-height: 40px;\r\n    width: 40px;\r\n    color: white;\r\n    cursor: pointer;\r\n    z-index: 500;\r\n    transition: .2 ease all;\r\n    display: none;\r\n}\r\n.carousel-cont__button:hover{\r\n    background-color: rgba(0, 0, 0, 0.9);\r\n}\r\n.carousel-cont__button--prev{\r\n    left: 0;\r\n}\r\n.carousel-cont__button--next{\r\n    right: 0;\r\n}\r\n\r\n.carousel{\r\n    width: 93%;\r\n    padding: 20px 0;\r\n    overflow: hidden;\r\n    scroll-behavior: smooth;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n.movies{\r\n    display: flex;\r\n    flex-wrap: nowrap;\r\n}\r\n.movie{\r\n    transition: .3s ease all;\r\n    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);\r\n    width: min-content;\r\n}\r\n.movie--hover{\r\n    transform: scale(1.1);\r\n    transform-origin: center;\r\n}\r\n.movie__img{\r\n    vertical-align: middle;\r\n}\r\n.movie__img--horizontal{\r\n    height: 200px;\r\n}\r\n.movie__img--vertical{\r\n    height: 311px;\r\n}\r\n\r\n\r\n/* Paginación */\r\n.list__indicators{\r\n    width: max-content;\r\n    margin: auto;\r\n}\r\n.indicator{\r\n    background-color: rgba(255, 255, 255, .6);\r\n    height: 5px;\r\n    width: 60px;\r\n    cursor: pointer;\r\n    border: none;\r\n    margin-right: 5px;\r\n}\r\n.indicator:hover{\r\n    background-color: rgba(255, 0, 0, .3);\r\n}\r\n.indicator--active{\r\n    background-color: red;\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/main-header.css":
+/*!***********************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/main-header.css ***!
+  \***********************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "*,\r\n*::before,\r\n*::after{\r\n    box-sizing: border-box;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n}\r\n\r\nbody{\r\n    margin: 0;\r\n    background-color: #202830;\r\n}\r\n\r\n.main-header{\r\n    display: flex;\r\n    justify-content: space-between;\r\n    background-color: #202830;\r\n}\r\n.logo{\r\n    width: 30%;\r\n}\r\n.main-nav{\r\n    width: 30%;\r\n    margin-top: auto;\r\n    margin-bottom: auto;\r\n}\r\n.main-menu{\r\n    width: 100%;\r\n    font-size: 17px;\r\n    list-style: none;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    cursor: pointer;\r\n    background-color: aqua;\r\n}\r\n\r\n.main-menu__item{\r\n    color: #aaa;\r\n}\r\n\r\n.main-menu__item:hover{\r\n    color: white;\r\n}\r\n\r\n.main-menu__item--active{\r\n    font-weight: bold;\r\n}\r\n\r\n.main-menu__item--user{\r\n    width: min-content;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    padding-right: 5px;\r\n}\r\n\r\n.user__img{\r\n    width: 30px;\r\n    border-radius: 1em;\r\n    margin-right: 5px;\r\n}\r\n\r\n/* @media screen and (max-width: 800px){\r\n    #logo{\r\n        width: 40%;\r\n    }\r\n    #top #nav{\r\n        display: none;\r\n    }\r\n    #cont-cover h2{\r\n        font-size: 2em;\r\n    }\r\n    #cont-cover p{\r\n        font-size: 1.3em;\r\n    }\r\n\r\n    .indicadores{\r\n        display: none;\r\n    }\r\n    .cont-carousel{\r\n        overflow: visible;\r\n    }\r\n    .btn-prev, .btn-next{\r\n        display: none;\r\n    }\r\n    .carousel.horizontal{\r\n        display: grid;\r\n        grid-template-columns: repeat(2, 1fr);\r\n        gap: 20px;\r\n        justify-items: center;\r\n    }\r\n    .carousel.horizontal .pelicula img{\r\n        height: 170px;\r\n    }\r\n    .carousel.vertical{\r\n        display: grid;\r\n        grid-template-columns: repeat(3, 1fr);\r\n        gap: 20px;\r\n        justify-items: center;\r\n    }\r\n\r\n} */", "",{"version":3,"sources":["webpack://./src/css/main-header.css"],"names":[],"mappings":"AAAA;;;IAGI,sBAAsB;IACtB,yCAAyC;AAC7C;;AAEA;IACI,SAAS;IACT,yBAAyB;AAC7B;;AAEA;IACI,aAAa;IACb,8BAA8B;IAC9B,yBAAyB;AAC7B;AACA;IACI,UAAU;AACd;AACA;IACI,UAAU;IACV,gBAAgB;IAChB,mBAAmB;AACvB;AACA;IACI,WAAW;IACX,eAAe;IACf,gBAAgB;IAChB,aAAa;IACb,8BAA8B;IAC9B,mBAAmB;IACnB,eAAe;IACf,sBAAsB;AAC1B;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,iBAAiB;AACrB;;AAEA;IACI,kBAAkB;IAClB,aAAa;IACb,mBAAmB;IACnB,8BAA8B;IAC9B,kBAAkB;AACtB;;AAEA;IACI,WAAW;IACX,kBAAkB;IAClB,iBAAiB;AACrB;;AAEA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;GAuCG","sourcesContent":["*,\r\n*::before,\r\n*::after{\r\n    box-sizing: border-box;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n}\r\n\r\nbody{\r\n    margin: 0;\r\n    background-color: #202830;\r\n}\r\n\r\n.main-header{\r\n    display: flex;\r\n    justify-content: space-between;\r\n    background-color: #202830;\r\n}\r\n.logo{\r\n    width: 30%;\r\n}\r\n.main-nav{\r\n    width: 30%;\r\n    margin-top: auto;\r\n    margin-bottom: auto;\r\n}\r\n.main-menu{\r\n    width: 100%;\r\n    font-size: 17px;\r\n    list-style: none;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    cursor: pointer;\r\n    background-color: aqua;\r\n}\r\n\r\n.main-menu__item{\r\n    color: #aaa;\r\n}\r\n\r\n.main-menu__item:hover{\r\n    color: white;\r\n}\r\n\r\n.main-menu__item--active{\r\n    font-weight: bold;\r\n}\r\n\r\n.main-menu__item--user{\r\n    width: min-content;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    padding-right: 5px;\r\n}\r\n\r\n.user__img{\r\n    width: 30px;\r\n    border-radius: 1em;\r\n    margin-right: 5px;\r\n}\r\n\r\n/* @media screen and (max-width: 800px){\r\n    #logo{\r\n        width: 40%;\r\n    }\r\n    #top #nav{\r\n        display: none;\r\n    }\r\n    #cont-cover h2{\r\n        font-size: 2em;\r\n    }\r\n    #cont-cover p{\r\n        font-size: 1.3em;\r\n    }\r\n\r\n    .indicadores{\r\n        display: none;\r\n    }\r\n    .cont-carousel{\r\n        overflow: visible;\r\n    }\r\n    .btn-prev, .btn-next{\r\n        display: none;\r\n    }\r\n    .carousel.horizontal{\r\n        display: grid;\r\n        grid-template-columns: repeat(2, 1fr);\r\n        gap: 20px;\r\n        justify-items: center;\r\n    }\r\n    .carousel.horizontal .pelicula img{\r\n        height: 170px;\r\n    }\r\n    .carousel.vertical{\r\n        display: grid;\r\n        grid-template-columns: repeat(3, 1fr);\r\n        gap: 20px;\r\n        justify-items: center;\r\n    }\r\n\r\n} */"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -196,10 +250,10 @@ module.exports = function (url, options) {
 
 /***/ }),
 
-/***/ "./src/img/los-coristas.jpg":
-/*!**********************************!*\
-  !*** ./src/img/los-coristas.jpg ***!
-  \**********************************/
+/***/ "./src/assets/img/los-coristas.jpg":
+/*!*****************************************!*\
+  !*** ./src/assets/img/los-coristas.jpg ***!
+  \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -211,10 +265,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/style.css":
-/*!***********************!*\
-  !*** ./src/style.css ***!
-  \***********************/
+/***/ "./src/css/cover.css":
+/*!***************************!*\
+  !*** ./src/css/cover.css ***!
+  \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -222,9 +276,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js!./style.css */ "./node_modules/css-loader/dist/cjs.js!./src/style.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_cover_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./cover.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/cover.css");
 
             
 
@@ -233,11 +287,71 @@ var options = {};
 options.insert = "head";
 options.singleton = false;
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_cover_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_cover_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
+
+/***/ }),
+
+/***/ "./src/css/lists.css":
+/*!***************************!*\
+  !*** ./src/css/lists.css ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_lists_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./lists.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/lists.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_lists_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_lists_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
+
+/***/ }),
+
+/***/ "./src/css/main-header.css":
+/*!*********************************!*\
+  !*** ./src/css/main-header.css ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_main_header_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./main-header.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/main-header.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_main_header_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_main_header_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
 
 /***/ }),
 
@@ -520,10 +634,10 @@ module.exports = function (list, options) {
 
 /***/ }),
 
-/***/ "./src/buttons.js":
-/*!************************!*\
-  !*** ./src/buttons.js ***!
-  \************************/
+/***/ "./src/js/buttons.js":
+/*!***************************!*\
+  !*** ./src/js/buttons.js ***!
+  \***************************/
 /***/ ((module) => {
 
 
@@ -585,10 +699,32 @@ module.exports = {moveNext, movePrev, showAndHideButtons}
 
 /***/ }),
 
-/***/ "./src/indicators.js":
-/*!***************************!*\
-  !*** ./src/indicators.js ***!
-  \***************************/
+/***/ "./src/js/index.js":
+/*!*************************!*\
+  !*** ./src/js/index.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _modules__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules */ "./src/js/modules.js");
+/* harmony import */ var _css_main_header_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/main-header.css */ "./src/css/main-header.css");
+/* harmony import */ var _css_cover_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/cover.css */ "./src/css/cover.css");
+/* harmony import */ var _css_lists_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../css/lists.css */ "./src/css/lists.css");
+
+
+
+
+
+(0,_modules__WEBPACK_IMPORTED_MODULE_0__.default)();
+
+
+/***/ }),
+
+/***/ "./src/js/indicators.js":
+/*!******************************!*\
+  !*** ./src/js/indicators.js ***!
+  \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -607,27 +743,27 @@ function makeIndicators(lists){
         let numPages = Math.ceil(movies.length/mpp);                            // cant de páginas
         
         for(let i = 0; i < numPages; i++){
-            var page = document.createElement('button');// creamos un indicador por página
-            if(i === 0) page.classList.add('activo');   // marcamos siempre el primer indicador
-            contPages.appendChild(page);                // agregamos el indicador
+            var page = document.createElement('button');           // creamos un indicador por página
+            page.classList.add('indicator')                        // añadimos el estilo
+            if(i === 0) page.classList.add('indicator--active');   // marcamos siempre el primer indicador
+            contPages.appendChild(page);                           // agregamos el indicador
             
             page.addEventListener('click', (e) => {                 // cada que hagan click en un indicador
                 var pages = [].slice.call(contPages.children);      // traemos los indicadores en su estado actual
             
                 pages.forEach( p => {                               // removemos la clase 'activo' a cada indicador
-                    if (p.classList.contains('activo')) p.classList.remove('activo')
+                    if (p.classList.contains('indicator--active')) 
+                        p.classList.remove('indicator--active')
                 })
                 
-                e.target.classList.add('activo');                   // activamos el indicador cliqueado
+                e.target.classList.add('indicator--active');                   // activamos el indicador cliqueado
                 row.scrollLeft = i * row.offsetWidth;               // movemos el scroll
             });
         }
     
         row.addEventListener('mouseleave', () => {
-            movies.forEach(movie => movie.classList.remove('hover'));
+            movies.forEach(movie => movie.classList.remove('movie--hover'));
         })
-        
-
     })
 }
 
@@ -635,10 +771,59 @@ function makeIndicators(lists){
 
 /***/ }),
 
-/***/ "./src/movies.js":
-/*!***********************!*\
-  !*** ./src/movies.js ***!
-  \***********************/
+/***/ "./src/js/modules.js":
+/*!***************************!*\
+  !*** ./src/js/modules.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _buttons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./buttons */ "./src/js/buttons.js");
+/* harmony import */ var _buttons__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_buttons__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _indicators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./indicators */ "./src/js/indicators.js");
+/* harmony import */ var _movies__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./movies */ "./src/js/movies.js");
+
+
+
+
+function runApp(){
+    var buttonsPrev = document.querySelectorAll('.btn-prev');
+    var buttonsNext = document.querySelectorAll('.btn-next');
+    var lists = document.querySelectorAll('.lista');
+    var allMovies = document.querySelectorAll('.pelicula');
+
+    // Pasa de dom objects -> arreglos
+    buttonsPrev = [].slice.call(buttonsPrev);
+    buttonsNext = [].slice.call(buttonsNext);
+    lists = [].slice.call(lists);
+    allMovies = [].slice.call(allMovies);
+
+
+    // Agrega eventos para mover las listas
+    buttonsPrev.forEach( prev =>{
+        prev.addEventListener('click', () => (0,_buttons__WEBPACK_IMPORTED_MODULE_0__.movePrev)(prev))
+    });
+    buttonsNext.forEach( next =>{
+        next.addEventListener('click', () => (0,_buttons__WEBPACK_IMPORTED_MODULE_0__.moveNext)(next))
+    });
+
+    (0,_buttons__WEBPACK_IMPORTED_MODULE_0__.showAndHideButtons)(lists);  //Agrega efectos para mostrar y esconder los botones
+    (0,_indicators__WEBPACK_IMPORTED_MODULE_1__.default)(lists);      //Agrega indicadores para cada lista
+    (0,_movies__WEBPACK_IMPORTED_MODULE_2__.default)(allMovies);   //Agrega efecto zoom a los posters
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (runApp);
+
+/***/ }),
+
+/***/ "./src/js/movies.js":
+/*!**************************!*\
+  !*** ./src/js/movies.js ***!
+  \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -660,50 +845,6 @@ function addZoomEffect(movies){
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (addZoomEffect);
-
-/***/ }),
-
-/***/ "./src/script.js":
-/*!***********************!*\
-  !*** ./src/script.js ***!
-  \***********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _indicators__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./indicators */ "./src/indicators.js");
-/* harmony import */ var _buttons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./buttons */ "./src/buttons.js");
-/* harmony import */ var _buttons__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_buttons__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _movies__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./movies */ "./src/movies.js");
-/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
-
-
-
-
-
-var buttonsPrev = document.querySelectorAll('.btn-prev');
-var buttonsNext = document.querySelectorAll('.btn-next');
-var lists = document.querySelectorAll('.lista');
-var allMovies = document.querySelectorAll('.pelicula');
-
-// Pasa de dom objects -> arreglos
-buttonsPrev = [].slice.call(buttonsPrev);
-buttonsNext = [].slice.call(buttonsNext);
-lists = [].slice.call(lists);
-allMovies = [].slice.call(allMovies);
-
-
-// Agrega eventos para mover las listas
-buttonsPrev.forEach( prev =>{
-    prev.addEventListener('click', () => (0,_buttons__WEBPACK_IMPORTED_MODULE_1__.movePrev)(prev))
-});
-buttonsNext.forEach( next =>{
-    next.addEventListener('click', () => (0,_buttons__WEBPACK_IMPORTED_MODULE_1__.moveNext)(next))
-});
-
-(0,_buttons__WEBPACK_IMPORTED_MODULE_1__.showAndHideButtons)(lists);  //Agrega efectos para mostrar y esconder los botones
-(0,_indicators__WEBPACK_IMPORTED_MODULE_0__.default)(lists);      //Agrega indicadores para cada lista
-(0,_movies__WEBPACK_IMPORTED_MODULE_2__.default)(allMovies);   //Agrega efecto zoom a los posters
 
 /***/ })
 
@@ -808,7 +949,7 @@ buttonsNext.forEach( next =>{
 /************************************************************************/
 /******/ 	// startup
 /******/ 	// Load entry module
-/******/ 	__webpack_require__("./src/script.js");
+/******/ 	__webpack_require__("./src/js/index.js");
 /******/ 	// This entry module used 'exports' so it can't be inlined
 /******/ })()
 ;

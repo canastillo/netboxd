@@ -14,7 +14,6 @@ body{
     display: flex;
     justify-content: space-between;
     background-color: #202830;
-
 }
 .logo{
     width: 30%;
@@ -26,14 +25,19 @@ body{
 }
 .main-menu{
     width: 100%;
-    color: #aaa;
     font-size: 17px;
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    background-color: aqua;
 }
+
+.main-menu__item{
+    color: #aaa;
+}
+
 .main-menu__item:hover{
     color: white;
 }
@@ -56,7 +60,7 @@ body{
     margin-right: 5px;
 }
 
-@media screen and (max-width: 800px){
+/* @media screen and (max-width: 800px){
     #logo{
         width: 40%;
     }
@@ -95,4 +99,4 @@ body{
         justify-items: center;
     }
 
-}
+} */
