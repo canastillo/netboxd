@@ -2,6 +2,7 @@
 
 const path = require('path');
 const mode = process.env.NODE_ENV === 'production' ? 'production' : 'development';
+const port = '5500'
 
 module.exports = {
     mode: mode,
@@ -29,7 +30,13 @@ module.exports = {
             }
         ]
     },
-    resolve: {
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        host: '0.0.0.0',
+        port: port,
+        open: 'Firefox',
+        openPage: 'http://localhost:' + port,
+        watchContentBase: true
     },
     devtool: 'source-map',
     plugins: [
