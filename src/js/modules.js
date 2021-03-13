@@ -6,15 +6,15 @@ function runApp(){
     var buttonsPrev = document.querySelectorAll('#carousel-cont__button--prev');
     var buttonsNext = document.querySelectorAll('#carousel-cont__button--next');
     var lists = document.querySelectorAll('#list');
-    var allMovies = document.querySelectorAll('#movie');
+    // var allMovies = document.querySelectorAll('#movie');
 
-    var carousels = document.querySelectorAll('#carousel');
+    // var carousels = document.querySelectorAll('#carousel');
 
     // Pasa de dom objects -> arreglos
     buttonsPrev = [].slice.call(buttonsPrev);
     buttonsNext = [].slice.call(buttonsNext);
     lists = [].slice.call(lists);
-    allMovies = [].slice.call(allMovies);
+    // allMovies = [].slice.call(allMovies);
 
     // Agrega eventos para mover las listas
     buttonsPrev.forEach( prev =>{
@@ -24,9 +24,9 @@ function runApp(){
         next.addEventListener('click', () => moveNext(next))
     });
 
-    showAndHideButtons(lists);  //Agrega efectos para mostrar y esconder los botones
     makeIndicators(lists);      //Agrega indicadores para cada lista
-    addZoomEffect(allMovies);   //Agrega efecto zoom a los posters
+    addZoomEffect(lists);       //Agrega efecto zoom a los posters
+    showAndHideButtons(lists);  //Agrega efectos para mostrar y esconder los botones
 }
 
 export default runApp

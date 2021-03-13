@@ -27,10 +27,6 @@ function makeIndicators(lists){
                 carousel[0].scrollLeft = i * carousel[0].offsetWidth;   // movemos el scroll
             });
         }
-
-        carousel[0].addEventListener('mouseleave', () => {
-            allMovies.forEach(movie => movie.classList.remove('movie--hover'));
-        })
     })
 }
 
