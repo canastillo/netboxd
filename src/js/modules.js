@@ -8,12 +8,13 @@ function runApp(){
     var lists = document.querySelectorAll('#list');
     var allMovies = document.querySelectorAll('#movie');
 
+    var carousels = document.querySelectorAll('#carousel');
+
     // Pasa de dom objects -> arreglos
     buttonsPrev = [].slice.call(buttonsPrev);
     buttonsNext = [].slice.call(buttonsNext);
     lists = [].slice.call(lists);
     allMovies = [].slice.call(allMovies);
-
 
     // Agrega eventos para mover las listas
     buttonsPrev.forEach( prev =>{

@@ -5,7 +5,7 @@ function identifyActive(btn){
     let activo; 
 
     pages.forEach( page =>{
-        if (page.classList.contains('activo')) activo = page;       
+        if (page.classList.contains('indicator--active')) activo = page;       
     })
 
     return activo;
@@ -35,7 +35,7 @@ function movePrev(btn){
 
 function showAndHideButtons(lists){
     lists.forEach(list =>{
-        let row = list.children[1].children[1];         // .cont-carousel
+        let row = list.children[1].children[1];         // .carousel
 
         // Esconder botones
         list.addEventListener('mouseleave', () => {
