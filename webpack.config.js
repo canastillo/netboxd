@@ -27,6 +27,11 @@ module.exports = {
                     outputPath: 'img',
                     name: '[name].[ext]'
                 }
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: 'babel-loader'
             }
         ]
     },
