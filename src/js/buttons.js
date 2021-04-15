@@ -1,56 +1,73 @@
+function addClickEventOnButtons(lists){
+    lists.forEach(list => {
+        let prevButton = list.getElementsByClassName('carousel-cont__button--prev');
+        let nextButton = list.getElementsByClassName('carousel-cont__button--next');
+        
+        prevButton[0].addEventListener('click', () => movePrev(list))
+        nextButton[0].addEventListener('click', () => moveNext(list))
+    })
+}
 
-function identifyActive(btn){
-    // contenedor de indicadores
-    var pages = [].slice.call(btn.parentNode.parentNode.children[2].children);
-    let activo; 
+function movePrev(list){
+    let carousel = list.getElementsByClassName('carousel');
+    carousel[0].scrollLeft -= carousel[0].offsetWidth;
 
-    pages.forEach( page =>{
-        if (page.classList.contains('indicator--active')) activo = page;       
+    let activeIndicator = identifyActiveIndicator(list);
+
+    if (activeIndicator.previousSibling) {
+        activeIndicator.classList.remove('indicator--active');
+        activeIndicator.previousSibling.classList.add('indicator--active');
+    }
+}
+
+function moveNext(list){
+    let carousel = list.getElementsByClassName('carousel');
+    carousel[0].scrollLeft += carousel[0].offsetWidth;
+
+    let activeIndicator = identifyActiveIndicator(list);
+
+    if (activeIndicator.nextSibling) {
+        activeIndicator.classList.remove('indicator--active');
+        activeIndicator.nextSibling.classList.add('indicator--active');
+    }
+}
+
+function identifyActiveIndicator(list){
+    let indicators = list.getElementsByClassName('indicator');
+    let activeIndicator;
+    
+    indicators = [].slice.call(indicators); //Pasar de DOM object -> array
+
+    indicators.forEach(indicator => {
+        if (indicator.classList.contains('indicator--active')) activeIndicator = indicator;
     })
 
-    return activo;
-}
-
-function moveNext(btn){
-    var fila = btn.parentNode.children[1];  // cont-carousel
-    fila.scrollLeft += fila.offsetWidth;    // posición + ancho
-    let activo = identifyActive(btn);
-
-    if (activo.nextSibling) {
-        activo.classList.remove('indicator--active');          // desactivamos indicador
-        activo.nextSibling.classList.add('indicator--active'); // pasamos al sig indicador
-    }
-}
-
-function movePrev(btn){
-    var fila = btn.parentNode.children[1];      // cont-carousel
-    fila.scrollLeft -= fila.offsetWidth;    // posición - ancho
-    let activo = identifyActive(btn);
-
-    if (activo.previousSibling) {
-        activo.classList.remove('indicator--active');              // desactivamos indicador
-        activo.previousSibling.classList.add('indicator--active'); // pasamos al sig indicador
-    }
+    return activeIndicator;
 }
 
 function showAndHideButtons(lists){
-    lists.forEach(list =>{
-        let row = list.children[1].children[1];         // .carousel
+    lists.forEach(list => {
+        let buttons = list.getElementsByClassName("carousel-cont__button");
+        let movies = list.getElementsByClassName("movies");
 
+        buttons = [].slice.call(buttons); //Pasar de DOM object -> array
+        
         // Esconder botones
         list.addEventListener('mouseleave', () => {
-            row.parentNode.children[0].style.display = "none";
-            row.parentNode.children[2].style.display = "none";
+            buttons.forEach(button =>{
+                button.style.display = "none";
+            })
         })
         
         // Mostrar botones
-        list.addEventListener('mouseenter', ()=> {            
-            if (window.getComputedStyle(row.children[0], null).display === "flex"){
-                row.parentNode.children[0].style.display = "block";
-                row.parentNode.children[2].style.display = "block";
+        list.addEventListener('mouseenter', () => {
+            if (window.getComputedStyle(movies[0], null).display === "flex"){
+                buttons.forEach(button =>{
+                    button.style.display = "block";
+                })
             }
         })
     })
 }
 
-module.exports = {moveNext, movePrev, showAndHideButtons}
+module.exports = {showAndHideButtons, addClickEventOnButtons}

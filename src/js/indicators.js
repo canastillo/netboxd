@@ -1,4 +1,4 @@
-function makeIndicators(lists){
+function makePositionIndicators(lists){
     lists.forEach( list =>{
         let carousel = list.getElementsByClassName('carousel');
         let movies = list.getElementsByClassName('movies');
@@ -6,12 +6,14 @@ function makeIndicators(lists){
         let indicators = list.getElementsByClassName('list__indicators');
         
         allMovies = [].slice.call(allMovies);
-        let mpp = movies[0].id === 'movies--horizontal' ? 3 : 5;        // movies per page
-        let numPages = Math.ceil(allMovies.length/mpp);                 // cant de páginas
+
+        let moviesPerPage = movies[0].id === 'movies--horizontal' ? 3 : 5;        // movies per page
+        let numPages = Math.ceil(allMovies.length/moviesPerPage);                 // cant de páginas
         
         for(let i = 0; i < numPages; i++){
             var page = document.createElement('button');                // creamos un indicador por página
             page.classList.add('indicator')                             // añadimos el estilo
+            
             if(i === 0) page.classList.add('indicator--active');        // marcamos siempre el primer indicador
             indicators[0].appendChild(page)                             // agregamos el indicador
             
@@ -30,4 +32,4 @@ function makeIndicators(lists){
     })
 }
 
-export default makeIndicators
+export default makePositionIndicators
