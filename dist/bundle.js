@@ -1,6 +1,240 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/buttons.js":
+/*!***************************!*\
+  !*** ./src/js/buttons.js ***!
+  \***************************/
+/***/ ((module) => {
+
+function addClickEventOnButtons(lists) {
+  lists.forEach(list => {
+    let prevButton = list.getElementsByClassName('carousel-cont__button--prev');
+    let nextButton = list.getElementsByClassName('carousel-cont__button--next');
+    prevButton[0].addEventListener('click', () => movePrev(list));
+    nextButton[0].addEventListener('click', () => moveNext(list));
+  });
+}
+
+function movePrev(list) {
+  let carousel = list.getElementsByClassName('carousel');
+  carousel[0].scrollLeft -= carousel[0].offsetWidth;
+  let activeIndicator = identifyActiveIndicator(list);
+
+  if (activeIndicator.previousSibling) {
+    activeIndicator.classList.remove('indicator--active');
+    activeIndicator.previousSibling.classList.add('indicator--active');
+  }
+}
+
+function moveNext(list) {
+  let carousel = list.getElementsByClassName('carousel');
+  carousel[0].scrollLeft += carousel[0].offsetWidth;
+  let activeIndicator = identifyActiveIndicator(list);
+
+  if (activeIndicator.nextSibling) {
+    activeIndicator.classList.remove('indicator--active');
+    activeIndicator.nextSibling.classList.add('indicator--active');
+  }
+}
+
+function identifyActiveIndicator(list) {
+  let indicators = list.getElementsByClassName('indicator');
+  let activeIndicator;
+  indicators = [].slice.call(indicators); //Pasar de DOM object -> array
+
+  indicators.forEach(indicator => {
+    if (indicator.classList.contains('indicator--active')) activeIndicator = indicator;
+  });
+  return activeIndicator;
+}
+
+function showAndHideButtons(lists) {
+  lists.forEach(list => {
+    let buttons = list.getElementsByClassName("carousel-cont__button");
+    let movies = list.getElementsByClassName("movies");
+    buttons = [].slice.call(buttons); //Pasar de DOM object -> array
+    // Esconder botones
+
+    list.addEventListener('mouseleave', () => {
+      buttons.forEach(button => {
+        button.style.display = "none";
+      });
+    }); // Mostrar botones
+
+    list.addEventListener('mouseenter', () => {
+      if (window.getComputedStyle(movies[0], null).display === "flex") {
+        buttons.forEach(button => {
+          button.style.display = "block";
+        });
+      }
+    });
+  });
+}
+
+module.exports = {
+  showAndHideButtons,
+  addClickEventOnButtons
+};
+
+/***/ }),
+
+/***/ "./src/js/index.js":
+/*!*************************!*\
+  !*** ./src/js/index.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _public_path__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./public_path */ "./src/js/public_path.js");
+/* harmony import */ var _modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules */ "./src/js/modules.js");
+/* harmony import */ var _css_main_header_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/main-header.css */ "./src/css/main-header.css");
+/* harmony import */ var _css_cover_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../css/cover.css */ "./src/css/cover.css");
+/* harmony import */ var _css_lists_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../css/lists.css */ "./src/css/lists.css");
+
+
+
+
+
+(0,_modules__WEBPACK_IMPORTED_MODULE_1__.default)();
+
+/***/ }),
+
+/***/ "./src/js/indicators.js":
+/*!******************************!*\
+  !*** ./src/js/indicators.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function makePositionIndicators(lists) {
+  lists.forEach(list => {
+    let carousel = list.getElementsByClassName('carousel');
+    let movies = list.getElementsByClassName('movies');
+    let allMovies = list.getElementsByClassName('movie');
+    let indicators = list.getElementsByClassName('list__indicators');
+    allMovies = [].slice.call(allMovies);
+    let moviesPerPage = movies[0].id === 'movies--horizontal' ? 3 : 5; // movies per page
+
+    let numPages = Math.ceil(allMovies.length / moviesPerPage); // cant de páginas
+
+    for (let i = 0; i < numPages; i++) {
+      var page = document.createElement('button'); // creamos un indicador por página
+
+      page.classList.add('indicator'); // añadimos el estilo
+
+      if (i === 0) page.classList.add('indicator--active'); // marcamos siempre el primer indicador
+
+      indicators[0].appendChild(page); // agregamos el indicador
+
+      page.addEventListener('click', e => {
+        // cada que hagan click en un indicador
+        var pages = [].slice.call(indicators[0].children); // traemos los indicadores en su estado actual
+
+        pages.forEach(p => {
+          // removemos la clase 'activo' a cada indicador
+          if (p.classList.contains('indicator--active')) p.classList.remove('indicator--active');
+        });
+        e.target.classList.add('indicator--active'); // activamos el indicador cliqueado
+
+        carousel[0].scrollLeft = i * carousel[0].offsetWidth; // movemos el scroll
+      });
+    }
+  });
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (makePositionIndicators);
+
+/***/ }),
+
+/***/ "./src/js/modules.js":
+/*!***************************!*\
+  !*** ./src/js/modules.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _buttons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./buttons */ "./src/js/buttons.js");
+/* harmony import */ var _buttons__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_buttons__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _indicators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./indicators */ "./src/js/indicators.js");
+/* harmony import */ var _movies__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./movies */ "./src/js/movies.js");
+
+
+
+
+function runApp() {
+  var lists = document.querySelectorAll('#list');
+  lists = [].slice.call(lists);
+  (0,_indicators__WEBPACK_IMPORTED_MODULE_1__.default)(lists);
+  (0,_buttons__WEBPACK_IMPORTED_MODULE_0__.showAndHideButtons)(lists);
+  (0,_buttons__WEBPACK_IMPORTED_MODULE_0__.addClickEventOnButtons)(lists);
+  (0,_movies__WEBPACK_IMPORTED_MODULE_2__.default)(lists);
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (runApp);
+
+/***/ }),
+
+/***/ "./src/js/movies.js":
+/*!**************************!*\
+  !*** ./src/js/movies.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function addZoomEffect(lists) {
+  lists.forEach(list => {
+    let carousel = list.getElementsByClassName('carousel');
+    var movies = list.getElementsByClassName('movie');
+    movies = [].slice.call(movies);
+    movies.forEach(movie => {
+      movie.addEventListener('mouseenter', e => {
+        let element = e.currentTarget;
+        setTimeout(() => {
+          movies.forEach(movie => movie.classList.remove('movie--hover'));
+          element.classList.add('movie--hover');
+        }, 200);
+      });
+    });
+    carousel[0].addEventListener('mouseleave', () => {
+      movies.forEach(movie => movie.classList.remove('movie--hover'));
+    });
+  });
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (addZoomEffect);
+
+/***/ }),
+
+/***/ "./src/js/public_path.js":
+/*!*******************************!*\
+  !*** ./src/js/public_path.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var __webpack_public_path__ = '../../dist/';
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_public_path__);
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/css/cover.css":
 /*!*****************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/css/cover.css ***!
@@ -631,220 +865,6 @@ module.exports = function (list, options) {
     lastIdentifiers = newLastIdentifiers;
   };
 };
-
-/***/ }),
-
-/***/ "./src/js/buttons.js":
-/*!***************************!*\
-  !*** ./src/js/buttons.js ***!
-  \***************************/
-/***/ ((module) => {
-
-
-function identifyActive(btn){
-    // contenedor de indicadores
-    var pages = [].slice.call(btn.parentNode.parentNode.children[2].children);
-    let activo; 
-
-    pages.forEach( page =>{
-        if (page.classList.contains('activo')) activo = page;       
-    })
-
-    return activo;
-}
-
-function moveNext(btn){
-    var fila = btn.parentNode.children[1];  // cont-carousel
-    fila.scrollLeft += fila.offsetWidth;    // posición + ancho
-    let activo = identifyActive(btn);
-
-    if (activo.nextSibling) {
-        activo.classList.remove('indicator--active');          // desactivamos indicador
-        activo.nextSibling.classList.add('indicator--active'); // pasamos al sig indicador
-    }
-}
-
-function movePrev(btn){
-    var fila = btn.parentNode.children[1];      // cont-carousel
-    fila.scrollLeft -= fila.offsetWidth;    // posición - ancho
-    let activo = identifyActive(btn);
-
-    if (activo.previousSibling) {
-        activo.classList.remove('indicator--active');              // desactivamos indicador
-        activo.previousSibling.classList.add('indicator--active'); // pasamos al sig indicador
-    }
-}
-
-function showAndHideButtons(lists){
-    lists.forEach(list =>{
-        let row = list.children[1].children[1];         // .cont-carousel
-
-        // Esconder botones
-        list.addEventListener('mouseleave', () => {
-            row.parentNode.children[0].style.display = "none";
-            row.parentNode.children[2].style.display = "none";
-        })
-        
-        // Mostrar botones
-        list.addEventListener('mouseenter', ()=> {            
-            if (window.getComputedStyle(row.children[0], null).display === "flex"){
-                row.parentNode.children[0].style.display = "block";
-                row.parentNode.children[2].style.display = "block";
-            }
-        })
-    })
-}
-
-module.exports = {moveNext, movePrev, showAndHideButtons}
-
-/***/ }),
-
-/***/ "./src/js/index.js":
-/*!*************************!*\
-  !*** ./src/js/index.js ***!
-  \*************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules */ "./src/js/modules.js");
-/* harmony import */ var _css_main_header_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/main-header.css */ "./src/css/main-header.css");
-/* harmony import */ var _css_cover_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/cover.css */ "./src/css/cover.css");
-/* harmony import */ var _css_lists_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../css/lists.css */ "./src/css/lists.css");
-
-
-
-
-
-(0,_modules__WEBPACK_IMPORTED_MODULE_0__.default)();
-
-
-/***/ }),
-
-/***/ "./src/js/indicators.js":
-/*!******************************!*\
-  !*** ./src/js/indicators.js ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-function makeIndicators(lists){
-    lists.forEach( list=>{
-        let row = list.children[1].children[1];         // .cont-carousel
-        let movies = row.children[0].children           // películas en esa lista
-        let contPages = list.children[2];               // .indicadores
-        
-        movies = [].slice.call(movies);
-        let mpp = (row.children[0].classList.contains('movies--horizontal')) ? 3 : 5;   // movies per page
-        let numPages = Math.ceil(movies.length/mpp);                            // cant de páginas
-        
-        for(let i = 0; i < numPages; i++){
-            var page = document.createElement('button');           // creamos un indicador por página
-            page.classList.add('indicator')                        // añadimos el estilo
-            if(i === 0) page.classList.add('indicator--active');   // marcamos siempre el primer indicador
-            contPages.appendChild(page);                           // agregamos el indicador
-            
-            page.addEventListener('click', (e) => {                 // cada que hagan click en un indicador
-                var pages = [].slice.call(contPages.children);      // traemos los indicadores en su estado actual
-            
-                pages.forEach( p => {                               // removemos la clase 'activo' a cada indicador
-                    if (p.classList.contains('indicator--active')) 
-                        p.classList.remove('indicator--active')
-                })
-                
-                e.target.classList.add('indicator--active');                   // activamos el indicador cliqueado
-                row.scrollLeft = i * row.offsetWidth;               // movemos el scroll
-            });
-        }
-    
-        row.addEventListener('mouseleave', () => {
-            movies.forEach(movie => movie.classList.remove('movie--hover'));
-        })
-    })
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (makeIndicators);
-
-/***/ }),
-
-/***/ "./src/js/modules.js":
-/*!***************************!*\
-  !*** ./src/js/modules.js ***!
-  \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _buttons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./buttons */ "./src/js/buttons.js");
-/* harmony import */ var _buttons__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_buttons__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _indicators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./indicators */ "./src/js/indicators.js");
-/* harmony import */ var _movies__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./movies */ "./src/js/movies.js");
-
-
-
-
-function runApp(){
-    var buttonsPrev = document.querySelectorAll('#carousel-cont__button--prev');
-    var buttonsNext = document.querySelectorAll('#carousel-cont__button--next');
-    var lists = document.querySelectorAll('#list');
-    var allMovies = document.querySelectorAll('#movie');
-
-    // Pasa de dom objects -> arreglos
-    buttonsPrev = [].slice.call(buttonsPrev);
-    buttonsNext = [].slice.call(buttonsNext);
-    lists = [].slice.call(lists);
-    allMovies = [].slice.call(allMovies);
-
-
-    // Agrega eventos para mover las listas
-    buttonsPrev.forEach( prev =>{
-        prev.addEventListener('click', () => (0,_buttons__WEBPACK_IMPORTED_MODULE_0__.movePrev)(prev))
-    });
-    buttonsNext.forEach( next =>{
-        next.addEventListener('click', () => (0,_buttons__WEBPACK_IMPORTED_MODULE_0__.moveNext)(next))
-    });
-
-    (0,_buttons__WEBPACK_IMPORTED_MODULE_0__.showAndHideButtons)(lists);  //Agrega efectos para mostrar y esconder los botones
-    (0,_indicators__WEBPACK_IMPORTED_MODULE_1__.default)(lists);      //Agrega indicadores para cada lista
-    (0,_movies__WEBPACK_IMPORTED_MODULE_2__.default)(allMovies);   //Agrega efecto zoom a los posters
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (runApp);
-
-/***/ }),
-
-/***/ "./src/js/movies.js":
-/*!**************************!*\
-  !*** ./src/js/movies.js ***!
-  \**************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-function addZoomEffect(movies){
-    movies.forEach(movie => {
-        movie.addEventListener('mouseenter', (e) => {
-            const element = e.currentTarget;
-            
-            setTimeout(() => {
-                movies.forEach(pelicula => pelicula.classList.remove('hover'));
-                element.classList.add('hover');
-            }, 200)
-        })
-    })
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (addZoomEffect);
 
 /***/ })
 
