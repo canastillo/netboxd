@@ -1,4 +1,4 @@
-const PATH = require('path');
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const MODE = process.env.NODE_ENV === 'production' ? 'production' : 'development';
@@ -8,31 +8,32 @@ module.exports = {
     mode: MODE,
     entry: './src/js/index.js',
     output: {
-        path: PATH.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
     },
     module: {
         rules: [
-            // {
-            //     test: /\.html$/,
-            //     use: [
-            //         {
-            //             loader: 'html-loader',
-            //             options: {
-            //                 // minimize: true
-            //             }
-            //         }
-            //     ]
-            // },
+            {
+                test: /\.html$/i,
+                use: [
+                    {
+                        loader: 'html-loader',
+                        options: {
+                            // minimize: true
+                            // sources: false
+                        }
+                    }
+                ]
+            },
             {
                 test: /\.(png|jpg|jpeg)$/,
-                // type: 'asset',
                 use: [
                     {
                         loader: 'file-loader',
                         options: {
                             name: '[name].[ext]',
                             outputPath: './assets/img/',
+                            publicPath: './assets/img/',
                         }
                     },
                     // Acá voy a poner el de webp
@@ -53,7 +54,7 @@ module.exports = {
         ]
     },
     devServer: {
-        contentBase: PATH.join(__dirname, 'dist'),
+        contentBase: path.join(__dirname, 'dist'),
         host: '0.0.0.0',
         port: PORT,
         open: 'Firefox',
