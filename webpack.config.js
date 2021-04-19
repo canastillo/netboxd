@@ -14,16 +14,16 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(html)$/,
-                use: [
-                    {
-                        loader: 'html-loader',
-                        options: {
-                            // minimize: true
-                            // sources: false
-                        }
-                    }
-                ]
+                // test: /\.(html)$/,
+                // use: [
+                //     {
+                //         loader: 'html-loader',
+                //         options: {
+                //             // minimize: true
+                //             // sources: false
+                //         }
+                //     }
+                // ]
             },
             {
                 test: /\.(png|jpg|jpeg)$/,
@@ -31,12 +31,12 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: '[name].[ext]',
+                            name: '[name].webp',
                             outputPath: './assets/img/',
                             publicPath: './assets/img/',
                         }
                     },
-                    // Acá voy a poner el de webp
+                    'webp-loader'
                 ]
             },
             {
