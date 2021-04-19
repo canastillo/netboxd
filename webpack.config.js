@@ -9,35 +9,22 @@ module.exports = {
     entry: './src/js/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        assetModuleFilename: 'assets/img/[name].webp'
     },
     module: {
         rules: [
             {
-                // test: /\.(html)$/,
-                // use: [
-                //     {
-                //         loader: 'html-loader',
-                //         options: {
-                //             // minimize: true
-                //             // sources: false
-                //         }
-                //     }
-                // ]
+                test: /\.(html)$/,
+                use: ['html-loader']
             },
             {
                 test: /\.(png|jpg|jpeg)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[name].webp',
-                            outputPath: './assets/img/',
-                            publicPath: './assets/img/',
-                        }
-                    },
-                    'webp-loader'
-                ]
+                type: 'asset/resource'
+            },
+            {
+                test: /\.(png|jpg|jpeg)$/,
+                use: ['webp-loader']
             },
             {
                 test: /\.css$/,
@@ -65,7 +52,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: 'src/index.html',
-            inject: 'body',
+            inject: 'head',
         })
     ]
-};
+}
