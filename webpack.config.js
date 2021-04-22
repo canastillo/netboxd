@@ -1,8 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const MODE = process.env.NODE_ENV === 'production' ? 'production' : 'development';
-const PORT = '5500'
+const PORT = '5500';
 
 module.exports = {
     mode: MODE,
@@ -29,7 +30,7 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [
-                    'style-loader',
+                    MiniCssExtractPlugin.loader,
                     'css-loader',
                     {
                         loader: "postcss-loader",
@@ -61,6 +62,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'src/index.html',
             inject: 'head',
-        })
+        }),
+        new MiniCssExtractPlugin()
     ]
 }
